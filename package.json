@@ -1,0 +1,23 @@
+{
+  "name": "yosemite",
+  "version": "1.0.0",
+  "description": "Avance 1.02.2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacuLitterio/YOSEMITE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacuLitterio/YOSEMITE/issues"
+  },
+  "homepage": "https://github.com/FacuLitterio/YOSEMITE#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
