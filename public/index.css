@@ -16,13 +16,13 @@ body {
 
 /* Primer Pantalla */
 .PrimerPantalla {
-  height: 600px;
+  height: 500px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_6bddc82c-edd4-4a50-973d-afe4f9c12402.jpg?v=1612226028");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 200px;
+  padding-left: 150px;
   display: flex;
   align-items: center;
 }
@@ -60,7 +60,7 @@ body {
 
 /* Tercera Pantalla */
 .TerceraPantalla {
-  height: 500px;
+  height: 450px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_0e6a5086-bed3-4264-b266-5d960b5a05bd.jpg?v=1612226166");
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +78,7 @@ body {
 
 /* Banner Sellos */
 .BannerSellos {
-  height: 300px;
+  height: 250px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_66cf17da-f2a6-49c6-827a-64e5f88ba9de.jpg?v=1612226166");
   background-repeat: no-repeat;
@@ -89,27 +89,32 @@ body {
 /* Cuarta Pantalla */
 .CuartaPantalla {
   height: 500px;
-  width: 100%;
+  display: flex;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3.png?v=1612226209");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-size: cover;
+  text-align: left;
   align-items: center;
 }
 
-.CuartaPantalla .content {
-  padding-left: 150px;
+.CuartaPantalla .content1 {
+  display: none;
 }
 
-.CuartaPantalla .content h1 {
+.CuartaPantalla .content2 {
+  height: 100%;
+  width: 50%;
+  padding: 0px 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CuartaPantalla .content2 h1 {
   color: var(--Primary-Color);
-  font-weight: var(--Font-Weight-Title);
-}
-
-.CuartaPantalla .content p {
-  margin: 50px 0px;
+  font-weight: 400;
 }
 
 /* Quinta Pantalla */
@@ -198,11 +203,16 @@ body {
   font-weight: bold;
   outline: none;
   transition: all 0.4s;
+  border-radius: 10px;
 }
 
 .active,
 .accordion:hover {
   background-color: #5cc27e;
+}
+
+.accordion:focus {
+  outline: none;
 }
 
 .panel {
@@ -260,7 +270,7 @@ body {
 }
 
 .OctavaPantalla .Body .Benefits1 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios1.jpg?v=1612226418");
   background-repeat: no-repeat;
@@ -270,6 +280,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits1 .content {
@@ -283,7 +294,7 @@ body {
 }
 
 .OctavaPantalla .Body .Benefits2 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios2.jpg?v=1612226418");
   background-repeat: no-repeat;
@@ -306,7 +317,7 @@ body {
 }
 
 .OctavaPantalla .Body .Benefits3 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios3.jpg?v=1612226419");
   background-repeat: no-repeat;
@@ -329,7 +340,7 @@ body {
 }
 
 .OctavaPantalla .Body .Benefits4 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios4.jpg?v=1612226419");
   background-repeat: no-repeat;
@@ -352,7 +363,7 @@ body {
 }
 
 .OctavaPantalla .Body .Benefits5 {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios5.jpg?v=1612226418");
   background-repeat: no-repeat;
@@ -411,19 +422,26 @@ body {
 
 /* Decimoprimera Pantalla */
 .DecimoPrimeraPantalla {
-  height: 500px;
-  width: 100%;
+  display: flex;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6_e95cad94-a71a-4f3a-862e-7e2173951d5a.jpg?v=1612226559");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  padding-left: 150px;
-  display: flex;
+  background-size: cover;
+  text-align: left;
   align-items: center;
 }
 
-.DecimoPrimeraPantalla div p {
-  width: 50%;
+.DecimoPrimeraPantalla .content1 {
+  padding: 50px 20px 0px 100px;
+}
+
+.DecimoPrimeraPantalla .content1 p {
+  width: 100%;
+}
+
+.DecimoPrimeraPantalla .content2 {
+  height: 400px;
+  width: 100%;
 }
 
 /* DecimoSegunda Pantalla */
@@ -443,7 +461,7 @@ body {
   grid-template-columns: repeat(4, 18vw);
   grid-template-rows: 1fr;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 10px;
   margin-top: 50px;
 }
 
@@ -488,7 +506,7 @@ body {
 
 .DecimoSegundaPantalla .Body-Grid .GridItem p {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 
 .DecimoSegundaPantalla .ButtonSupplementFacts {
@@ -498,7 +516,8 @@ body {
 }
 
 .DecimoSegundaPantalla .ButtonSupplementFacts button {
-  width: 200px;
+  height: 40px;
+  width: 250px;
   background-color: var(--Primary-Color);
   color: white;
   outline: none;
@@ -511,20 +530,26 @@ body {
 
 /* Decimo Tercera Pantalla */
 .DecimoTerceraPantalla {
-  height: 300px;
-  width: 100%;
+  display: flex;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggesteduse_probiotics.jpg?v=1612226796");
   background-repeat: no-repeat;
+  background-position: right;
   background-size: cover;
-  background-position: center;
-  padding-left: 250px;
-  display: flex;
+  text-align: left;
   align-items: center;
 }
 
-.DecimoTerceraPantalla div p {
-  width: 50%;
-  color: var(--Muted-Color);
+.DecimoTerceraPantalla .content1 {
+  padding: 50px 20px 0px 100px;
+}
+
+.DecimoTerceraPantalla .content1 p {
+  width: 100%;
+}
+
+.DecimoTerceraPantalla .content2 {
+  height: 400px;
+  width: 100%;
 }
 
 /* Decimo Cuarta Pantalla (Ultima) */
@@ -566,7 +591,7 @@ body {
   }
 
   .SegundaPantalla {
-    padding: 50px 40px;
+    padding: 50px 20px;
   }
 
   .SegundaPantalla .GridItems {
@@ -578,7 +603,7 @@ body {
     height: auto;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_1.jpg?v=1612227157");
     background-position: top;
-    padding: 50px 20px;
+    padding: 50px 50px;
   }
 
   .TerceraPantalla p {
@@ -587,30 +612,52 @@ body {
 
   .BannerSellos {
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_627e07fd-1541-4038-96e9-c5045008166b.jpg?v=1612227157");
-    height: 200px;
+    height: 175px;
     width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
   .CuartaPantalla {
     height: auto;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
-    background-position: left;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: flex-start;
+    grid-template-rows: auto auto;
+    background: none;
   }
 
-  .CuartaPantalla .content {
-    padding: 50px 20px;
+  .CuartaPantalla .content1 {
+    height: 300px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    display: block;
+  }
+
+  .CuartaPantalla .content2 {
+    height: auto;
+    width: 100%;
     text-align: center;
+    padding: 50px 20px 50px 20px;
     order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .CuartaPantalla .content2 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
   }
 
   .QuintaPantalla {
     height: auto;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
 
   .QuintaPantalla .digestive-problems-body {
@@ -657,12 +704,13 @@ body {
   }
 
   .OctavaPantalla .Body .Benefits1 {
-    height: 500px;
+    height: 520px;
     width: 100%;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio1.jpg?v=1612227712");
     background-repeat: no-repeat;
     background-position: bottom;
     justify-content: flex-start;
+    padding: 10px;
   }
 
   .OctavaPantalla .Body .Benefits1 .content {
@@ -741,7 +789,8 @@ body {
   }
 
   .NovenaPantalla {
-    padding: 0px 20px 50px 20px;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
   }
 
   .NovenaPantalla .content {
@@ -751,24 +800,40 @@ body {
     margin-top: 30px;
   }
 
+  .NovenaPantalla .content .Item {
+    font-size: 12px;
+  }
+
   .DecimaPantalla {
     height: 300px;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3_ff58dab2-a1f8-4fda-a1bb-3aaa00b7e0d5.jpg?v=1612230708");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .DecimoPrimeraPantalla {
-    height: 800px;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cee25110-5b2e-4d61-aeb9-72703fe8b9a5.jpg?v=1612230708");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 50px 20px;
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     text-align: center;
+    background: none;
   }
 
-  .DecimoPrimeraPantalla div p {
+  .DecimoPrimeraPantalla .content1 {
+    padding: 50px 20px 0px 20px;
+  }
+
+  .DecimoPrimeraPantalla .content1 p {
     width: 100%;
+  }
+
+  .DecimoPrimeraPantalla .content2 {
+    height: 300px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cee25110-5b2e-4d61-aeb9-72703fe8b9a5.jpg?v=1612230708");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   .DecimoSegundaPantalla {
@@ -776,7 +841,7 @@ body {
   }
 
   .DecimoSegundaPantalla .Title h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .DecimoSegundaPantalla .Body-Grid {
@@ -790,33 +855,51 @@ body {
     margin-top: 50px;
   }
 
+  .DecimoSegundaPantalla .Body-Grid .GridItem {
+    padding: 15px;
+  }
+
   .DecimoSegundaPantalla .Body-Grid .GridItem p {
-    font-size: 30px;
+    font-size: 35px;
+    font-size: 4vw;
   }
 
   .DecimoTerceraPantalla {
-    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background: none;
+  }
+
+  .DecimoTerceraPantalla .content1 {
+    padding: 50px 20px;
+  }
+
+  .DecimoTerceraPantalla .content1 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
+  }
+
+  .DecimoTerceraPantalla .content1 p {
+    width: 100%;
+  }
+
+  .DecimoTerceraPantalla .content2 {
+    height: 60vw;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_10761caf-f0b0-40e7-8774-6996244b7134.jpg?v=1612230795");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding: 50px 20px;
-    display: flex;
-    align-items: flex-start;
-    text-align: center;
-  }
-
-  .DecimoTerceraPantalla div p {
-    width: 100%;
   }
 
   .DecimoCuartaPantalla {
-    padding: 50px 20px;
-    height: 700px;
+    padding: 20px;
+    height: 500px;
     width: 100%;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-end_ae2e8d22-92b3-43b5-a938-24d1165c1663.jpg?v=1612230795");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -825,6 +908,7 @@ body {
   }
 
   .DecimoCuartaPantalla p {
+    font-size: 25px;
     padding-bottom: 0;
   }
 }
@@ -851,6 +935,7 @@ body {
 
   .TerceraPantalla {
     padding: 50px 20px;
+    background-position: center;
   }
 
   .TerceraPantalla p {
@@ -858,29 +943,48 @@ body {
   }
 
   .BannerSellos {
-    height: 200px;
+    height: 150px;
+    background-size: cover;
   }
 
   .CuartaPantalla {
-    height: auto;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3.png?v=1612226209");
-    background-position: center;
-    background-repeat: no-repeat;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: flex-start;
+    grid-template-rows: auto auto;
+    background: none;
   }
 
-  .CuartaPantalla .content {
-    width: 60%;
-    padding: 50px 20px;
-    text-align: flex-start;
+  .CuartaPantalla .content1 {
+    height: 300px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    display: block;
+  }
+
+  .CuartaPantalla .content2 {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
     order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .CuartaPantalla .content2 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
   }
 
   .QuintaPantalla {
     height: auto;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
 
   .QuintaPantalla .digestive-problems-body {
@@ -1013,19 +1117,28 @@ body {
   }
 
   .DecimoPrimeraPantalla {
-    height: 600px;
-    width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cee25110-5b2e-4d61-aeb9-72703fe8b9a5.jpg?v=1612230708");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 50px 20px;
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    background: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     text-align: center;
   }
 
-  .DecimoPrimeraPantalla div p {
+  .DecimoPrimeraPantalla .content1 {
+    padding: 50px 20px 0px 20px;
+  }
+
+  .DecimoPrimeraPantalla .content1 p {
     width: 100%;
+  }
+
+  .DecimoPrimeraPantalla .content2 {
+    height: 500px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cee25110-5b2e-4d61-aeb9-72703fe8b9a5.jpg?v=1612230708");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   .DecimoSegundaPantalla .Body-Grid {
@@ -1055,19 +1168,31 @@ body {
   }
 
   .DecimoTerceraPantalla {
-    height: 300px;
-    width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggesteduse_probiotics.jpg?v=1612226796");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    padding: 50px 20px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    background: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
   }
 
-  .DecimoTerceraPantalla div p {
-    width: 60%;
-    color: var(--Muted-Color);
+  .DecimoTerceraPantalla .content1 {
+    padding: 50px 20px;
+  }
+
+  .DecimoTerceraPantalla .content1 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
+  }
+
+  .DecimoTerceraPantalla .content1 p {
+    width: 100%;
+  }
+
+  .DecimoTerceraPantalla .content2 {
+    height: 60vw;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_10761caf-f0b0-40e7-8774-6996244b7134.jpg?v=1612230795");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
   }
 }
