@@ -448,6 +448,7 @@ body {
 .DecimoSegundaPantalla {
   background-color: #b3e2be;
   padding: 50px 0px;
+  position: relative;
 }
 
 .DecimoSegundaPantalla .Title {
@@ -526,6 +527,45 @@ body {
   font-size: 16px;
   font-weight: bolder;
   padding: 5px;
+}
+
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto auto;
+  padding: 10px;
+  background: #141414;
+}
+
+.Modal h1 {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.Modal .Facts {
+  height: 90%;
+  width: 90%;
+  max-width: 400px;
+  max-height: 500px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Probiotics_-_Supplements_Facts-01.png?v=1612490807");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Modal.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Decimo Tercera Pantalla */
