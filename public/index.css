@@ -545,10 +545,10 @@ body {
 }
 
 .Modal .Facts {
-  height: 90%;
+  height: 95%;
   width: 95%;
   max-width: 420px;
-  max-height: 500px;
+  max-height: 550px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Probiotics_-_Supplements_Facts-01.png?v=1612490807");
   background-repeat: no-repeat;
   background-size: cover;
@@ -562,7 +562,7 @@ body {
   cursor: pointer;
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -10px;
   background: rgb(255, 63, 63);
   display: flex;
   justify-content: center;
