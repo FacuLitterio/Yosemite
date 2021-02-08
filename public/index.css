@@ -16,13 +16,13 @@ body {
 
 /* Primer Pantalla */
 .PrimerPantalla {
-  height: 500px;
+  height: auto;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_6bddc82c-edd4-4a50-973d-afe4f9c12402.jpg?v=1612226028");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 150px;
+  padding: 50px 20px 50px 200px;
   display: flex;
   align-items: center;
 }
@@ -244,7 +244,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 200px;
+  padding-left: 100px;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -541,13 +541,7 @@ body {
   z-index: 10;
   margin: auto auto;
   padding: 10px;
-  background: #141414;
-}
-
-.Modal h1 {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+  background: #141414d5;
 }
 
 .Modal .Facts {
@@ -559,6 +553,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.Modal .Facts i {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: -5px;
+  background: rgb(255, 63, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  padding-bottom: 5px;
 }
 
 .Modal.open {
@@ -955,11 +966,16 @@ body {
 
 @media (min-width: 700px) and (max-width: 1200px) {
   .PrimerPantalla {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1200px.jpg?v=1612567219");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 50px 20px;
+    height: auto;
   }
 
   .PrimerPantalla div {
-    width: 70%;
+    width: 60%;
   }
 
   .SegundaPantalla {
@@ -992,12 +1008,13 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     background: none;
+    height: auto;
   }
 
   .CuartaPantalla .content1 {
-    height: 300px;
+    height: 450px;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2-1200px.jpg?v=1612567220");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1052,14 +1069,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 50px 20px;
+    padding: 50px 20px 50px 100px;
     margin-top: 50px;
     display: flex;
     align-items: center;
   }
 
   .SeptimaPantalla div {
-    width: 70%;
+    width: 60%;
     color: white;
   }
 
@@ -1154,6 +1171,12 @@ body {
     max-width: 100%;
     margin-right: 0px;
     margin-top: 60px;
+  }
+
+  .DecimaPantalla {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3-1200px.jpg?v=1612567220");
+    background-size: cover;
+    background-position: center;
   }
 
   .DecimoPrimeraPantalla {
