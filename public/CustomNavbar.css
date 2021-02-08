@@ -1,0 +1,174 @@
+:root {
+  --Primary-Color: #6ce294;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--Text-Color);
+}
+
+/* Compras Mayores A... */
+.ComprasMayorasA {
+  height: 40px;
+  width: 100vw;
+  background-color: var(--Primary-Color);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.Navbar {
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--Primary-Color);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Navbar div {
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+/* Menu Slider */
+.Menu {
+  height: calc(100vh - 102px);
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 102px;
+  background: white;
+  border-right: 1px solid #33333333;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.Menu.open {
+  transform: translateX(0%);
+}
+
+.Menu .Search {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.Menu .Search input {
+  height: 40px;
+  width: 85%;
+  border-radius: 50px;
+  text-indent: 20px;
+  border: 1px solid #00000018;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Menu .Search input:focus {
+  outline: none;
+}
+
+.Menu .Shop {
+  height: 60px;
+  padding: 0px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Menu .ContentShop {
+  height: 0px;
+  padding: 0px 20px;
+  overflow: hidden;
+}
+
+.Menu .ContentShop.open {
+  height: auto;
+  padding: 0px 20px;
+}
+
+.Menu .ContentShop h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+.Menu .ContentShop ul {
+  list-style: none;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.Menu .ContentShop ul li {
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.Menu .ContentShop ul li a {
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.Menu .Learn {
+  height: 60px;
+  padding: 0px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hamburguer Icon */
+.IconHamburguer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.IconHamburguer .IconHamburguer-Bar {
+  height: 4px;
+  width: 100%;
+  border-radius: 20px;
+  background: #333333;
+  margin: 2px 0px;
+}
+
+.IconHamburguer.open .IconHamburguer-Bar:nth-child(2) {
+  display: none;
+}

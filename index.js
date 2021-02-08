@@ -9,8 +9,12 @@ app.set("PORT", process.env.PORT || 4000);
 //Middlewares
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
+app.get("/Probiotics", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+app.get("/Navbar", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "CustomNavbar.html"));
 });
 
 app.listen(app.get("PORT"), () =>
