@@ -267,7 +267,7 @@ body {
   color: var(--Primary-Color);
 }
 
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 1000px) {
   .Menu {
     display: none;
   }
