@@ -246,7 +246,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 .Menu .SignIn .SignIn-Item {
@@ -265,12 +265,6 @@ body {
 
 .Menu .SignIn a:hover {
   color: var(--Primary-Color);
-}
-
-@media (min-width: 1000px) {
-  .Menu {
-    display: none;
-  }
 }
 
 /* Hamburguer Icon */
