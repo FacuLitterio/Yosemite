@@ -44,7 +44,7 @@
       </div>
       <div class="Shop" onclick="OpenShop()" id="Shop">
         <h6>SHOP</h6>
-        <h3>&#43;</h3>
+        <h3 id="ShoPlus">&#43;</h3>
       </div>
       <div class="ContentShop" id="ContentShop">
         <h6><strong>COLLECTIONS</strong></h6>
@@ -69,7 +69,7 @@
           </li>
           <li>
             <img
-              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/men.png?v=1608676710"
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/bestseller.png?v=1608676710"
               alt="Best Sellers"
               width="30px"
               height="30px"
@@ -174,9 +174,43 @@
           </li>
         </ul>
       </div>
-      <div class="Learn">
-        <h6>LEARN</h6>
-        <h3>&#43;</h3>
+      <div class="Learn" onclick="OpenLearn()">
+        <h6 id="Learn">LEARN</h6>
+        <h3 id="LearnPlus">&#43;</h3>
+      </div>
+      <div class="ContentLearn" id="ContentLearn">
+        <ul>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/blog.png?v=1608688563"
+              alt="Blog"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">Blog</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/faq.png?v=1608688563"
+              alt="FAQ"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">FAQ</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/aboutus.png?v=1608688563"
+              alt="AboutUs"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="SignIn">
+        <a href="#">Sign In</a>
       </div>
     </div>
 
@@ -191,11 +225,26 @@
       };
       const OpenShop = () => {
         const ContentShop = document.getElementById("ContentShop");
+        const ShoPlus = document.getElementById("ShoPlus");
 
         if (ContentShop.classList.contains("open")) {
           ContentShop.classList.remove("open");
+          ShoPlus.classList.remove("open");
         } else {
           ContentShop.classList.add("open");
+          ShoPlus.classList.add("open");
+        }
+      };
+      const OpenLearn = () => {
+        const ContentLearn = document.getElementById("ContentLearn");
+        const LearnPlus = document.getElementById("LearnPlus");
+
+        if (ContentLearn.classList.contains("open")) {
+          ContentLearn.classList.remove("open");
+          LearnPlus.classList.remove("open");
+        } else {
+          ContentLearn.classList.add("open");
+          LearnPlus.classList.add("open");
         }
       };
     </script>

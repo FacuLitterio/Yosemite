@@ -25,6 +25,7 @@ body {
   align-items: center;
   font-size: 10px;
   font-weight: bold;
+  z-index: 10;
 }
 
 /* Navbar */
@@ -40,6 +41,7 @@ body {
   align-items: center;
   border-bottom: 2px solid var(--Primary-Color);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .Navbar div {
@@ -99,10 +101,19 @@ body {
   cursor: pointer;
 }
 
+.Menu .Shop h3 {
+  transition: transform 0.3s;
+}
+
+.Menu .Shop h3.open {
+  transform: rotate(135deg);
+}
+
 .Menu .ContentShop {
   height: 0px;
   padding: 0px 20px;
   overflow: hidden;
+  transition: height 0.5s;
 }
 
 .Menu .ContentShop.open {
@@ -149,6 +160,67 @@ body {
   align-items: center;
   font-size: 20px;
   cursor: pointer;
+}
+
+.Menu .Learn h3 {
+  transition: transform 0.3s;
+}
+
+.Menu .Learn h3.open {
+  transform: rotate(135deg);
+}
+
+.Menu .ContentLearn {
+  height: 0px;
+  padding: 0px 20px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.Menu .ContentLearn.open {
+  height: auto;
+  padding: 0px 20px;
+}
+
+.Menu .ContentLearn ul {
+  list-style: none;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  row-gap: 10px;
+}
+
+.Menu .ContentLearn ul li {
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.Menu .ContentLearn ul li a {
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.Menu .SignIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.Menu .SignIn a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Menu .SignIn a:hover {
+  color: var(--Primary-Color);
 }
 
 /* Hamburguer Icon */
