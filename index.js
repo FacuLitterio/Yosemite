@@ -16,12 +16,12 @@ app.get("/Navbar", (req, res) => {
 
 //Probiotics Route
 app.get("/Probiotics", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "Probiotics.html"));
 });
 
 //Probiotics Route
 app.get("/NaturalNights", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "NaturalNights.html"));
 });
 
 app.listen(app.get("PORT"), () =>
