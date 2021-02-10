@@ -11,24 +11,25 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
   color: var(--Text-Color);
 }
 
 /* Primer Pantalla */
 .PrimerPantalla {
-  height: auto;
+  height: 600px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_6bddc82c-edd4-4a50-973d-afe4f9c12402.jpg?v=1612226028");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 50px 20px 50px 200px;
+  padding: 50px 20px 50px 300px;
   display: flex;
   align-items: center;
 }
 
 .PrimerPantalla div {
-  width: 50%;
+  width: 48%;
 }
 
 .PrimerPantalla div h1 {
@@ -49,6 +50,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 400px);
+  column-gap: 40px;
   justify-items: center;
   justify-content: center;
   margin-top: 70px;
@@ -104,8 +106,8 @@ body {
 
 .CuartaPantalla .content2 {
   height: 100%;
-  width: 50%;
-  padding: 0px 0px 0px 50px;
+  width: 40%;
+  padding: 0px 0px 0px 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +246,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 100px;
+  padding-left: 200px;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -272,12 +274,7 @@ body {
 .OctavaPantalla .Body .Benefits1 {
   height: 450px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios1.jpg?v=1612226418");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px;
@@ -285,7 +282,6 @@ body {
 
 .OctavaPantalla .Body .Benefits1 .content {
   max-width: 30%;
-  margin-right: 500px;
 }
 
 .OctavaPantalla .Body .Benefits1 .content p {
@@ -293,22 +289,23 @@ body {
   margin-top: 20px;
 }
 
+.OctavaPantalla .Body .Benefits1 img {
+  height: 500px;
+  width: 500px;
+}
+
 .OctavaPantalla .Body .Benefits2 {
   height: 450px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios2.jpg?v=1612226418");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits2 .content {
+  margin-left: 50px;
   max-width: 30%;
-  margin-left: 500px;
 }
 
 .OctavaPantalla .Body .Benefits2 .content p {
@@ -316,22 +313,22 @@ body {
   margin-top: 20px;
 }
 
+.OctavaPantalla .Body .Benefits2 img {
+  height: 500px;
+  width: 500px;
+}
+
 .OctavaPantalla .Body .Benefits3 {
   height: 450px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios3.jpg?v=1612226419");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits3 .content {
   max-width: 30%;
-  margin-right: 500px;
 }
 
 .OctavaPantalla .Body .Benefits3 .content p {
@@ -339,22 +336,23 @@ body {
   margin-top: 20px;
 }
 
+.OctavaPantalla .Body .Benefits3 img {
+  height: 500px;
+  width: 500px;
+}
+
 .OctavaPantalla .Body .Benefits4 {
   height: 450px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios4.jpg?v=1612226419");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits4 .content {
+  margin-left: 50px;
   max-width: 30%;
-  margin-left: 500px;
 }
 
 .OctavaPantalla .Body .Benefits4 .content p {
@@ -362,27 +360,32 @@ body {
   margin-top: 20px;
 }
 
+.OctavaPantalla .Body .Benefits4 img {
+  height: 500px;
+  width: 500px;
+}
+
 .OctavaPantalla .Body .Benefits5 {
   height: 450px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-beneficios5.jpg?v=1612226418");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits5 .content {
   max-width: 30%;
-  margin-right: 500px;
 }
 
 .OctavaPantalla .Body .Benefits5 .content p {
   color: var(--Muted-Color);
   margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits5 img {
+  height: 500px;
+  width: 500px;
 }
 
 /* Novena Pantalla */
@@ -607,13 +610,15 @@ body {
 .DecimoCuartaPantalla {
   height: 700px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-end_8e2eccde-4490-4dd7-baa9-485c805fd514.jpg?v=1612226796");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.DecimoCuartaPantalla img {
+  height: 500px;
+  width: 500px;
 }
 
 .DecimoCuartaPantalla p {
@@ -632,7 +637,7 @@ body {
     background-position: bottom;
     color: white;
     padding: 50px 20px;
-    height: 1000px;
+    height: 120vh;
     align-items: flex-start;
     text-align: center;
   }
@@ -750,18 +755,15 @@ body {
   }
 
   .OctavaPantalla .Body {
-    margin-top: 20px;
     text-align: center;
   }
 
   .OctavaPantalla .Body .Benefits1 {
-    height: 520px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio1.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
-    padding: 10px;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits1 .content {
@@ -775,45 +777,54 @@ body {
     margin-top: 0px;
   }
 
-  .OctavaPantalla .Body .Benefits2 {
-    height: 500px;
+  .OctavaPantalla .Body .Benefits1 img {
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio2.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .OctavaPantalla .Body .Benefits2 .content {
     width: 100%;
     max-width: 100%;
     margin-left: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
   }
 
   .OctavaPantalla .Body .Benefits3 {
-    height: 500px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio3.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits3 .content {
     width: 100%;
     max-width: 100%;
     margin-right: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits3 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   .OctavaPantalla .Body .Benefits4 {
-    height: 500px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio4.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits4 .content {
@@ -823,20 +834,29 @@ body {
     margin-top: 60px;
   }
 
-  .OctavaPantalla .Body .Benefits5 {
-    height: 500px;
+  .OctavaPantalla .Body .Benefits4 img {
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio5.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits5 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits5 .content {
     width: 100%;
     max-width: 100%;
     margin-right: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits5 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   .NovenaPantalla {
@@ -945,17 +965,19 @@ body {
   }
 
   .DecimoCuartaPantalla {
-    padding: 20px;
-    height: 500px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-end_ae2e8d22-92b3-43b5-a938-24d1165c1663.jpg?v=1612230795");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 400px;
+    width: 100%;
+    max-width: 450px;
   }
 
   .DecimoCuartaPantalla p {
@@ -1081,25 +1103,28 @@ body {
   }
 
   .OctavaPantalla {
-    padding: 50px 50px;
+    padding: 50px 20px;
+  }
+
+  .OctavaPantalla .Title {
+    width: 100%;
+    text-align: center;
   }
 
   .OctavaPantalla .Body {
-    margin-top: 20px;
     text-align: center;
   }
 
   .OctavaPantalla .Body .Benefits1 {
-    height: 475px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio1.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits1 .content {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     margin-right: 0px;
     margin-top: 30px;
@@ -1109,68 +1134,88 @@ body {
     margin-top: 0px;
   }
 
-  .OctavaPantalla .Body .Benefits2 {
-    height: 475px;
+  .OctavaPantalla .Body .Benefits1 img {
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio2.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .OctavaPantalla .Body .Benefits2 .content {
-    width: 100%;
+    width: 80%;
+
     max-width: 100%;
     margin-left: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
   }
 
   .OctavaPantalla .Body .Benefits3 {
-    height: 475px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio3.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits3 .content {
-    width: 100%;
+    width: 80%;
+
     max-width: 100%;
     margin-right: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits3 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   .OctavaPantalla .Body .Benefits4 {
-    height: 475px;
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio4.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits4 .content {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     margin-left: 0px;
     margin-top: 60px;
   }
 
-  .OctavaPantalla .Body .Benefits5 {
-    height: 475px;
+  .OctavaPantalla .Body .Benefits4 img {
+    height: auto;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/probiotics-beneficio5.jpg?v=1612227712");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    justify-content: flex-start;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits5 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
   }
 
   .OctavaPantalla .Body .Benefits5 .content {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     margin-right: 0px;
-    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits5 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   .DecimaPantalla {
@@ -1257,5 +1302,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+  }
+
+  .DecimoCuartaPantalla img {
+    width: 500px;
   }
 }

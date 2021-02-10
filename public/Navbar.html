@@ -1,1271 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <!-- seccion de navegacion -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Navbar</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="Navbar.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   </head>
-  <!-- seccion de navegacion -->
-  <!-- seccion de navegacion -->
-  <style>
-    @media (min-width: 1501px) {
-      .dropbtn {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn2 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn3 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
+  <body>
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      /* */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 6;
-      }
+    <!--Compras Mayores A...-->
+    <div class="ComprasMayorasA">
+      <h3>FREE SHIPPING ON ORDERS OVER $60</h3>
+    </div>
 
-      .dropdown-content2 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        min-width: 80vw;
-        min-height: 17vw;
-        box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 6;
-      }
-      .separadorcontenido {
-        margin-left: 20px;
-      }
-      .dropdown-content3 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        min-width: 11vw;
-        min-height: 15vw;
-        box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 6;
-      }
-      .botontproductos {
-        background-color: #90ca65;
-        color: white;
-        border-radius: 30px;
-        width: 250px;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border: none;
-        padding: 7px 32px;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .botontproductos:hover {
-        background-color: #999;
-        color: white;
-        text-decoration: none;
-      }
-
-      .separador {
-        padding-top: 20px;
-      }
-      .separadorrow {
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      .separadorcolumnas2 {
-        padding-right: 20px;
-      }
-
-      .titulocollection {
-        font-size: 20px;
-        text-emphasis: left;
-      }
-      .imagenmenu {
-        height: 46px;
-        width: 46px;
-        margin: 0 auto;
-      }
-      .atexto {
-        color: #3d3935;
-        font-size: 18px;
-        text-align: left;
-      }
-      .atexto:hover {
-        color: #90ca65;
-      }
-
-      /*
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  */
-
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:hover .dropdown-content2 {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-
-        /*
-  display: flex;
-  flex-wrap: wrap;
-  transition: 0.2s 1s;
-  */
-      }
-      .dropdown:hover .dropdown-content3 {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:hover .dropbtn2 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:hover .dropbtn3 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:hover .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .arrowmenu {
-        border: solid gray;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-      }
-
-      .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-
-      .left {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
-
-      .up {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-      }
-    }
-
-    /* FIN PANTALLA GRANDE */
-    @media (min-width: 1200px) and (max-width: 1500px) {
-      /*Tamaño visor */
-      .imagenmenu {
-        height: 40px;
-        width: 40px;
-        margin: 0 auto;
-      }
-      .dropbtn {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn2 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn3 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .dropdown-content2 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        font-size: 12px;
-        min-width: 10vw;
-        min-height: 125vw;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .dropdown-content3 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        min-width: 15vw;
-        min-height: 15vw;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .separadorcolumnas {
-        margin-left: 5px;
-      }
-      .separadorcolumnas2 {
-        margin-left: 5px;
-      }
-
-      .separador {
-        padding-top: 20px;
-      }
-      .separadorrow {
-        padding-top: 10px;
-      }
-      .separadorcontenido {
-        margin-left: 10px;
-      }
-      .titulocollection {
-        font-size: 17px;
-        text-align: left;
-      }
-      .imagenmenu {
-        height: 35px;
-        width: 35px;
-      }
-      .atexto {
-        color: #3d3935;
-        font-size: 15px;
-        text-align: left;
-      }
-      .atexto:hover {
-        color: #90ca65;
-      }
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:hover .dropdown-content2 {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:hover .dropdown-content3 {
-        display: block;
-        position: fixed;
-      }
-      .botontproductos {
-        background-color: #90ca65;
-        color: white;
-        border-radius: 30px;
-        width: 250px;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border: none;
-        padding: 7px 32px;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .botontproductos:hover {
-        background-color: #999;
-        color: white;
-        text-decoration: none;
-      }
-
-      .dropdown:hover .dropbtn3 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:hover .dropbtn2 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:hover .dropbtn {
-        background-color: #ffffff;
-        color: black;
-      }
-
-      .dropdown:hover .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .arrowmenu {
-        border: solid gray;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-      }
-
-      .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-
-      .left {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
-
-      .up {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-      }
-    }
-
-    @media only screen and (min-width: 769px) and (max-width: 1199px) {
-      /*Tamaño visor */
-      .visormenu {
-        width: 330px !important;
-      }
-
-      .dropbtn {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn2 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn3 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .dropdown-content2 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        font-size: 12px;
-        min-width: 10vw;
-        min-height: 125vw;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .dropdown-content3 {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-        z-index: 3;
-      }
-      .botontproductos {
-        background-color: #90ca65;
-        color: white;
-        border-radius: 30px;
-        width: 250px;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border: none;
-        padding: 7px 32px;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .botontproductos:hover {
-        background-color: #999;
-        color: white;
-        text-decoration: none;
-      }
-      .separadorcolumnas {
-        margin-left: 5px;
-      }
-      .separadorcolumnas2 {
-        margin-left: 5px;
-      }
-
-      .separador {
-        padding-top: 20px;
-      }
-      .separadorrow {
-        padding-top: 10px;
-      }
-      .separadorcontenido {
-        margin-left: 10px;
-      }
-      .titulocollection {
-        font-size: 17px;
-        text-align: left;
-      }
-      .imagenmenu {
-        height: 40px;
-        width: 40px;
-      }
-      .atexto {
-        color: #3d3935;
-        font-size: 15px;
-        text-align: left;
-      }
-      .atexto:hover {
-        color: #90ca65;
-      }
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:focus .dropdown-content {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:focus .dropdown-content2 {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:focus .dropdown-content3 {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-      }
-
-      .dropdown:focus .dropbtn3 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:focus .dropbtn2 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:focus .dropbtn {
-        background-color: #ffffff;
-        color: black;
-      }
-      .show {
-        display: block;
-        position: relative !important;
-        left: 0;
-        right: 0;
-      }
-
-      .dropbtn:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-      .dropbtn2:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-      .dropbtn3:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .arrowmenu {
-        border: solid gray;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-      }
-
-      .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-
-      .left {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
-
-      .up {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .visormenu {
-        width: 330px !important;
-      }
-
-      .dropbtn {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn2 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      .dropbtn3 {
-        background-color: #ffffff;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-
-      .dropdown {
-        /*position:static !important;*/
-        position: relative !important;
-        display: inline-block;
-      }
-      .dropdown-content {
-        display: none;
-        position: fixed;
-        background-color: #ffffff;
-        width: 100%;
-        left: 0;
-        right: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        z-index: 3;
-      }
-      .dropdown-content2 {
-        display: none;
-        position: fixed;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        font-size: 12px;
-        min-width: 15vm;
-        min-height: 100vm;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        z-index: 6;
-      }
-      .dropdown-content3 {
-        display: none;
-        position: fixed;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        width: 100%;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        z-index: 3;
-      }
-      .botontproductos {
-        background-color: #90ca65;
-        color: white;
-        border-radius: 30px;
-        width: 250px;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border: none;
-        padding: 7px 32px;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .botontproductos:hover {
-        background-color: #999;
-        color: white;
-        text-decoration: none;
-      }
-      .separadorcolumnas {
-        margin-left: 5px;
-      }
-      .separadorcolumnas2 {
-        margin-left: 5px;
-      }
-
-      .separador {
-        padding-top: 20px;
-      }
-      .separadorrow {
-        padding-top: 10px;
-      }
-      .separadorcontenido {
-        margin-left: 0px;
-      }
-      .titulocollection {
-        font-size: 17px;
-        text-align: left;
-      }
-      .imagenmenu {
-        height: 33px;
-        width: 33px;
-      }
-      .atexto {
-        color: #3d3935;
-        font-size: 15px;
-        text-align: left;
-      }
-      .atexto:hover {
-        color: #90ca65;
-      }
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:focus .dropdown-content {
-        display: block;
-        position: relative !important;
-        left: 0;
-        right: 0;
-      }
-      .dropdown:focus .dropdown-content2 {
-        display: block;
-        position: relative !important;
-        left: 0;
-        right: 0;
-      }
-
-      .dropdown:focus .dropdown-content3 {
-        display: block;
-        position: relative !important;
-        left: 0;
-        right: 0;
-      }
-
-      .dropdown:focus .dropbtn3 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:focus .dropbtn2 {
-        background-color: #ffffff;
-        color: black;
-      }
-      .dropdown:focus .dropbtn {
-        background-color: #ffffff;
-        color: black;
-      }
-
-      .show {
-        display: block;
-        position: relative !important;
-        left: 0;
-        right: 0;
-      }
-      .dropbtn:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-      .dropbtn2:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-      .dropbtn3:focus .down {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .arrowmenu {
-        border: solid gray;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-      }
-
-      .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-
-      .left {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
-
-      .up {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-
-      .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-      }
-    }
-  </style>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
-        <div class="dropdown">
-          <button onclick="myFunction3()" class="dropbtn3">
-            PRODUCTS <i class="arrowmenu down"></i>
-          </button>
-          <div class="container-fluid">
-            <div id="myDropdown3" class="dropdown-content border-top">
-              <div class="row separadorcontenido">
-                <div class="col-12 text-center">
-                  <div class="row">
-                    {% for product in
-                    collections[settings.popular_products_collection].products
-                    limit:settings.popular_products_limit %}
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                      {% include 'sidebar-product-grid-nuevo' %}
-                    </div>
-                    {% endfor %}
-                  </div>
-                </div>
-                <div class="col-12 text-center">
-                  <a
-                    class="botontproductos"
-                    href="https://yosemitesupplements.com/collections/all-products"
-                    >ALL PRODUCTS</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+    <!--Navbar-->
+    <div class="Navbar">
+      <div onclick="OpenMenu()">
+        <div class="IconHamburguer" id="IconHamburguer">
+          <span class="IconHamburguer-Bar"></span>
+          <span class="IconHamburguer-Bar"></span>
+          <span class="IconHamburguer-Bar"></span>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
-        <div class="dropdown">
-          <button onclick="myFunction2()" class="dropbtn2">
-            SHOP <i class="arrowmenu down"></i>
-          </button>
-          <div class="container-fluid">
-            <div id="myDropdown2" class="dropdown-content2 border-top">
-              <div class="row separadorcontenido">
-                <div
-                  class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 separadorrow"
-                >
-                  <div class="row separadorrow">
-                    <div
-                      class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left"
-                    >
-                      <span class="titulocollection"><b>COLLECTIONS</b></span>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/men.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/men-s-health"
-                            >Men's Health</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/women.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/women-s-health"
-                            >Women's Health</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/bestseller.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/best-sellers"
-                            >Best Sellers</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/newproducts.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/new-products"
-                            >New Products</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                  <div class="row separador">
-                    <div
-                      class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left"
-                    >
-                      <span class="titulocollection"><b>BUNDLES</b></span>
-                    </div>
-
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/immunesystem.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-10 atexto"
-                        >
-                          <a
-                            class="atexto"
-                            href="https://yosemitesupplements.com/products/yosemite-immune-system-support"
-                            >Immune System Support</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalcycle.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-10 atexto"
-                        >
-                          <a
-                            class="atexto"
-                            href="https://yosemitesupplements.com/products/yosemite-natural-cycle-balance"
-                            >Natural Cycle Balance</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/collagen.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-10 atexto"
-                        >
-                          <a
-                            class="atexto"
-                            href="https://yosemitesupplements.com/products/yosemite-collagen-enhancement"
-                            >Collagen Enhancement</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
-                  <div class="row separador">
-                    <div
-                      class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left"
-                    >
-                      <span class="titulocollection"><b>HEALTH FOCUS</b></span>
-                    </div>
-
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/immunity.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/immunity"
-                            >Immunity</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/beauty.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/beauty"
-                            >Beauty</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/wellness.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/wellness"
-                            >Wellness</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/digestive.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/digestive-health"
-                            >Digestive Health</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/brainbooster.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/brain-booster"
-                            >Brain Booster</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 separadorrow"
-                    >
-                      <div class="row">
-                        <div
-                          class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 text-left"
-                        >
-                          <img
-                            class="img-fluid imagenmenu"
-                            src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/sleep.png?v=1608676710"
-                          />
-                        </div>
-                        <div
-                          class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-9 atexto"
-                        >
-                          <a class="atexto" href="/collections/sleep-well"
-                            >Sleep Well</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/LOGO-BLACK_600px.jpg?v=1611257083"
+          alt="Icon"
+          width="200px"
+          height="50px"
+        />
       </div>
+      <div>
+        <img src="./Icons/CartIcon.svg" alt="Icon" width="30px" height="30px" >
+        <span>0</span>
+      </img>
 
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            LEARN <i class="arrowmenu down"></i>
-          </button>
-          <div class="container-fluid">
-            <div id="myDropdown" class="dropdown-content3 border-top">
-              <div class="row separadorcontenido">
-                <div
-                  class="col-2 col-xs-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 text-center separadorrow"
-                >
-                  <img
-                    class="img-fluid imagenmenu"
-                    src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/blog.png?v=1608688563"
-                  />
-                </div>
-                <div
-                  class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-7 col-xl-7 text-left separadorrow"
-                >
-                  <a
-                    class="atexto"
-                    href="https://yosemitesupplements.com/blogs/yosemite-supplements-blog"
-                    >BLOG</a
-                  >
-                </div>
-                <div
-                  class="col-2 col-xs-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 text-center separadorrow"
-                >
-                  <img
-                    class="img-fluid imagenmenu"
-                    src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/faq.png?v=1608688563"
-                  />
-                </div>
-                <div
-                  class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-7 col-xl-7 text-left separadorrow"
-                >
-                  <a
-                    class="atexto"
-                    href="https://yosemitesupplements.com/pages/faq"
-                    >FAQ</a
-                  >
-                </div>
-                <div
-                  class="col-2 col-xs-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 text-certer separadorrow"
-                >
-                  <img
-                    class="img-fluid imagenmenu"
-                    src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/aboutus.png?v=1608688563"
-                  />
-                </div>
-                <div
-                  class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-7 col-xl-7 text-left separadorrow"
-                >
-                  <a
-                    class="atexto"
-                    href="https://yosemitesupplements.com/pages/about-us"
-                    >ABOUT US</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+
+    <!--Menu Slider-->
+    <div class="Menu" id="Menu">
+      <div class="Search">
+        <input type="text" placeholder="Search Our Store..." />
+        <img src="./Icons/Loupe.svg" alt="Search" width="22px" height="22px">
+      </div>
+      <div class="Products" id="Products">
+        <h6>BEST PRODUCTS</h6>
+        <i id="ProPlus">&#43;</i>
+      </div>
+      <div class="Products" id="Products">
+        <h6>BUNDLES</h6>
+        <i id="ProPlus">&#43;</i>
+      </div>
+      <div class="Shop" onclick="OpenShop()" id="Shop">
+        <h6>CATEGORIES</h6>
+        <i id="ShoPlus">&#43;</i>
+      </div>
+      <div class="ContentShop" id="ContentShop">
+        <h6><strong>COLLECTIONS</strong></h6>
+        <ul>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/men.png?v=1608676710"
+              alt="Men's Health"
+              width="30px"
+              height="30px"
+            />
+            <a href="/#">Men's Health</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/women.png?v=1608676710"
+              alt="Women's Health"
+              width="30px"
+              height="30px"
+            />
+            <a href="/#">Women's Health</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/bestseller.png?v=1608676710"
+              alt="Best Sellers"
+              width="30px"
+              height="30px"
+            />
+            <a href="/#">Best Sellers</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/newproducts.png?v=1608676710"
+              alt="New Products"
+              width="30px"
+              height="30px"
+            />
+            <a href="/#">New Products</a>
+          </li>
+        </ul>
+        <h6><strong>HEALTH FOCUS</strong></h6>
+        <ul>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/immunity.png?v=1608676710"
+              alt="Inmunity"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Inmunity</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/beauty.png?v=1608676710"
+              alt="Beauty"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Beauty</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/wellness.png?v=1608676710"
+              alt="Wellness"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Wellness</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/digestive.png?v=1608676710"
+              alt="Digestive Health"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Digestive Health</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/brainbooster.png?v=1608676710"
+              alt="Brain Booster"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Brain Booster</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/sleep.png?v=1608676710"
+              alt="Sleep Well"
+              width="35px"
+              height="35px"
+            />
+            <a href="/#">Sleep Well</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Learn" onclick="OpenLearn()">
+        <h6 id="Learn">LEARN</h6>
+        <i id="LearnPlus">&#43;</i>
+      </div>
+      <div class="ContentLearn" id="ContentLearn">
+        <ul>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/blog.png?v=1608688563"
+              alt="Blog"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">Blog</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/faq.png?v=1608688563"
+              alt="FAQ"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">FAQ</a>
+          </li>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0462/5353/9490/files/aboutus.png?v=1608688563"
+              alt="AboutUs"
+              width="40px"
+              height="40px"
+            />
+            <a href="/#">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="SignIn">
+        <div class="SignIn-Item">
+          <img src="./Icons/SignIn.svg" alt="SignIn" height="25px" width="25px">
+          <a href="#">SIGN IN</a>
+        </div>
+        <div class="SignIn-Item">
+          <img src="./Icons/User.svg" alt="CreateAnAccount" height="25px" width="25px">
+          <a href="#">CREATE AN ACCOUNT</a>
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    /* Cuando el usuario hace click en el boton, 
-    cambiamos el show y hide */
-    function myFunction() {
-      if (document.documentElement.clientWidth <= 1200) {
-        document.getElementById("myDropdown").classList.toggle("show");
-      } else {
-      }
-    }
-    function myFunction2() {
-      if (document.documentElement.clientWidth <= 1200) {
-        document.getElementById("myDropdown2").classList.toggle("show");
-      } else {
-      }
-    }
-    function myFunction3() {
-      if (document.documentElement.clientWidth <= 1200) {
-        document.getElementById("myDropdown3").classList.toggle("show");
-      } else {
-      }
-    }
 
-    // Cierra el dropdown si el usuario clickea
-    window.onclick = function (event) {
-      if (!event.target.matches(".dropbtn")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content3");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show");
-          }
+    <script>
+      const OpenMenu = () => {
+        const Menu = document.getElementById("Menu");
+        const IconHamburguer = document.getElementById("IconHamburguer");
+
+        if (Menu.classList.contains("open")) {
+          Menu.classList.remove("open");
+          IconHamburguer.classList.remove('open')
+        } else {
+          Menu.classList.add("open");
+          IconHamburguer.classList.add('open')
         }
-      }
-      if (!event.target.matches(".dropbtn2")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content2");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show");
-          }
+      };
+      const OpenShop = () => {
+        const ContentShop = document.getElementById("ContentShop");
+        const ShoPlus = document.getElementById("ShoPlus");
+
+        if (ContentShop.classList.contains("open")) {
+          ContentShop.classList.remove("open");
+          ShoPlus.classList.remove("open");
+        } else {
+          ContentShop.classList.add("open");
+          ShoPlus.classList.add("open");
         }
-      }
-      if (!event.target.matches(".dropbtn3")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show");
-          }
+      };
+      const OpenLearn = () => {
+        const ContentLearn = document.getElementById("ContentLearn");
+        const LearnPlus = document.getElementById("LearnPlus");
+
+        if (ContentLearn.classList.contains("open")) {
+          ContentLearn.classList.remove("open");
+          LearnPlus.classList.remove("open");
+        } else {
+          ContentLearn.classList.add("open");
+          LearnPlus.classList.add("open");
         }
-      }
-    };
-  </script>
+      };
+    </script>
+  </body>
 </html>

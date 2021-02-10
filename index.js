@@ -9,12 +9,19 @@ app.set("PORT", process.env.PORT || 4000);
 //Middlewares
 app.use(express.static(path.join(__dirname, "public")));
 
+//Navbar Route
+app.get("/Navbar", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Navbar.html"));
+});
+
+//Probiotics Route
 app.get("/Probiotics", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.get("/Navbar", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "CustomNavbar.html"));
+//Probiotics Route
+app.get("/NaturalNights", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.listen(app.get("PORT"), () =>
