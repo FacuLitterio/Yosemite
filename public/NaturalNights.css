@@ -13,7 +13,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: var(--Text-Color);
 }
 
@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0px 0px 50px 200px;
+  padding: 0px 0px 50px 150px;
   display: flex;
   align-items: center;
   color: var(--Text-Color-Light);
@@ -41,7 +41,7 @@ body {
 
 /* Segunda Pantalla */
 .SegundaPantalla {
-  padding: 10px 0px 50px 0px;
+  padding: 0px 50px 50px 50px;
   text-align: center;
 }
 
@@ -52,15 +52,11 @@ body {
 .SegundaPantalla .GridItems {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  column-gap: 40px;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
   justify-items: center;
   justify-content: center;
   margin-top: 70px;
-}
-
-.SegundaPantalla .GridItems .CardBody h3 {
-  font-weight: 400;
 }
 
 /* Tercera Pantalla */
@@ -93,7 +89,7 @@ body {
 
 /* Cuarta Pantalla */
 .CuartaPantalla {
-  height: 500px;
+  height: 450px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_9e5c652e-c480-4e19-bdc8-438497a44223.jpg?v=1612205136");
   background-repeat: no-repeat;
   background-position: center;
@@ -102,19 +98,20 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 50px 0px;
 }
 
-.CuartaPantalla .content {
+.CuartaPantalla .content2 {
   height: 100%;
   width: 60%;
-  padding: 0px 200px 0px 50px;
+  padding: 0px 50px 0px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.CuartaPantalla .content h1 {
+.CuartaPantalla .content2 h1 {
   color: var(--Primary-Color);
   font-weight: 400;
 }
@@ -239,7 +236,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 220px;
+  padding-left: 10vw;
   display: flex;
   align-items: center;
 }
@@ -247,6 +244,7 @@ body {
 .SeptimaPantalla div {
   width: 50%;
   color: white;
+  margin-top: 50px;
 }
 
 /* Octava Pantalla */
@@ -255,6 +253,7 @@ body {
 }
 
 .OctavaPantalla .Title {
+  padding: 0px 30px;
   text-align: center;
 }
 
@@ -269,19 +268,19 @@ body {
 .OctavaPantalla .Body .Benefits1 {
   height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits1 .content {
-  justify-self: flex-end;
-  width: 60%;
+  max-width: 30%;
 }
 
 .OctavaPantalla .Body .Benefits1 .content p {
   color: var(--Muted-Color);
+  margin-top: 20px;
 }
 
 .OctavaPantalla .Body .Benefits1 img {
@@ -292,19 +291,20 @@ body {
 .OctavaPantalla .Body .Benefits2 {
   height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits2 .content {
-  justify-self: flex-start;
-  width: 70%;
+  margin-left: 50px;
+  max-width: 30%;
 }
 
 .OctavaPantalla .Body .Benefits2 .content p {
   color: var(--Muted-Color);
+  margin-top: 20px;
 }
 
 .OctavaPantalla .Body .Benefits2 img {
@@ -315,19 +315,19 @@ body {
 .OctavaPantalla .Body .Benefits3 {
   height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits3 .content {
-  justify-self: flex-end;
-  width: 60%;
+  max-width: 30%;
 }
 
 .OctavaPantalla .Body .Benefits3 .content p {
   color: var(--Muted-Color);
+  margin-top: 20px;
 }
 
 .OctavaPantalla .Body .Benefits3 img {
@@ -338,19 +338,20 @@ body {
 .OctavaPantalla .Body .Benefits4 {
   height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits4 .content {
-  justify-self: flex-start;
-  width: 70%;
+  margin-left: 50px;
+  max-width: 30%;
 }
 
 .OctavaPantalla .Body .Benefits4 .content p {
   color: var(--Muted-Color);
+  margin-top: 20px;
 }
 
 .OctavaPantalla .Body .Benefits4 img {
@@ -361,19 +362,19 @@ body {
 .OctavaPantalla .Body .Benefits5 {
   height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .OctavaPantalla .Body .Benefits5 .content {
-  justify-self: flex-end;
-  width: 60%;
+  max-width: 30%;
 }
 
 .OctavaPantalla .Body .Benefits5 .content p {
   color: var(--Muted-Color);
+  margin-top: 20px;
 }
 
 .OctavaPantalla .Body .Benefits5 img {
@@ -381,21 +382,850 @@ body {
   width: 500px;
 }
 
+/* Novena Pantalla */
+.NovenaPantalla {
+  padding: 50px 0px;
+}
+
+.NovenaPantalla .Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--Primary-Color);
+}
+
+.NovenaPantalla .Title h4 {
+  max-width: 800px;
+}
+
+.NovenaPantalla .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.NovenaPantalla .content p {
+  border-left: 5px solid var(--Primary-Color);
+  padding-left: 10px;
+  color: var(--Muted-Color);
+  font-weight: 500;
+}
+
+/* Decima Pantalla */
+.DecimaPantalla {
+  height: 300px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4.jpg?v=1612205400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Decimoprimera Pantalla */
+.DecimoPrimeraPantalla {
+  display: flex;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6_e95cad94-a71a-4f3a-862e-7e2173951d5a.jpg?v=1612226559");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  align-items: center;
+}
+
+.DecimoPrimeraPantalla .content1 {
+  padding: 50px 20px 0px 100px;
+}
+
+.DecimoPrimeraPantalla .content1 p {
+  width: 80%;
+}
+
+.DecimoPrimeraPantalla .content2 {
+  height: 400px;
+  width: 100%;
+}
+
+/* DecimoSegunda Pantalla */
+.DecimoSegundaPantalla {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingredientes.jpg?v=1612248507");
+  padding: 50px 0px;
+  position: relative;
+}
+
+.DecimoSegundaPantalla .Title {
+  text-align: center;
+  color: white;
+}
+
+.DecimoSegundaPantalla .Body-Grid {
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem {
+  width: 100%;
+  height: 100%;
+  color: var(--Primary-Color);
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(1) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingrediente1_1.jpg?v=1612897105");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(2) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingrediente2_1.jpg?v=1612897105");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(3) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingrediente3_1.jpg?v=1612897105");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem p {
+  text-align: center;
+  font-weight: var(--Font-Weight-Title);
+  font-size: 20px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem p:nth-child(2) {
+  text-align: center;
+  font-size: 12px;
+  color: var(--Muted-Color);
+}
+
+.DecimoSegundaPantalla .ButtonSupplementFacts {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.DecimoSegundaPantalla .ButtonSupplementFacts button {
+  height: 40px;
+  width: 250px;
+  background-color: var(--Secondary-Color);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto auto;
+  padding: 10px;
+  background: #141414d5;
+}
+
+.Modal .Facts {
+  height: 95%;
+  width: 90%;
+  max-width: 350px;
+  max-height: 450px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Probiotics_-_Supplements_Facts-01.png?v=1612490807");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Modal .Facts i {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -13px;
+  background: rgb(255, 63, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+}
+
+.Modal.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Decimo Tercera Pantalla */
+.DecimoTerceraPantalla {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use.jpg?v=1612205520");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.DecimoTerceraPantalla .content1 {
+  height: 400px;
+  padding: 50px 250px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DecimoTerceraPantalla .content1 p {
+  width: 100%;
+}
+
+.DecimoTerceraPantalla .content2 {
+  width: 100%;
+}
+
+/* Decimo Cuarta Pantalla (Ultima) */
+.DecimoCuartaPantalla {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecimoCuartaPantalla img {
+  height: 400px;
+  min-height: 400px;
+  width: 400px;
+  min-width: 400px;
+}
+
+.DecimoCuartaPantalla p {
+  color: var(--Primary-Color);
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
 @media (min-width: 0px) and (max-width: 700px) {
   .PrimerPantalla {
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-position: bottom;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_1.jpg?v=1612895294");
-    padding: 50px 20px;
-    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 50px 50px 50px 50px;
+    height: 1000px;
     text-align: center;
+    align-items: flex-start;
   }
 
   .PrimerPantalla div {
     width: 100%;
   }
+
+  .SegundaPantalla {
+    padding: 50px 20px;
+  }
+
+  .SegundaPantalla .GridItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    margin-top: 70px;
+    padding: 0 50px;
+  }
+
+  .TerceraPantalla {
+    height: auto;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_1.jpg?v=1612227157");
+    background-position: top;
+    padding: 100px 50px;
+  }
+
+  .TerceraPantalla p {
+    width: 90%;
+  }
+
+  .BannerSellos {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_627e07fd-1541-4038-96e9-c5045008166b.jpg?v=1612227157");
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .CuartaPantalla {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background: none;
+    padding-top: 0px;
+  }
+
+  .CuartaPantalla .content1 {
+    height: 350px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2.jpg?v=1612205939");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    display: block;
+  }
+
+  .CuartaPantalla .content2 {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .QuintaPantalla {
+    height: auto;
+    padding: 50px 20px 0px 20px;
+  }
+
+  .QuintaPantalla .sleep-problems-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 0px;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .SeptimaPantalla {
+    height: 1100px;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3.jpg?v=1612205808");
+    background-size: cover;
+    background-position: bottom;
+    padding: 50px 20px;
+    padding-top: 0px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .SeptimaPantalla div {
+    width: 100%;
+  }
+
+  .OctavaPantalla {
+    padding: 50px 20px;
+  }
+
+  .OctavaPantalla .Body {
+    text-align: center;
+  }
+
+  .OctavaPantalla .Body .Benefits1 {
+    height: auto;
+    width: 100%;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits1 .content {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+
+  .OctavaPantalla .Body .Benefits1 .content p {
+    margin-top: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits1 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .OctavaPantalla .Body .Benefits2 .content {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits3 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits3 .content {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits3 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits4 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits4 .content {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits4 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits5 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits5 .content {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits5 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .NovenaPantalla {
+    padding: 20px;
+  }
+
+  .DecimaPantalla {
+    height: 150px;
+  }
+
+  .DecimoPrimeraPantalla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background: none;
+  }
+
+  .DecimoPrimeraPantalla .content1 {
+    padding: 50px 20px 0px 20px;
+  }
+
+  .DecimoPrimeraPantalla .content1 p {
+    width: 100%;
+  }
+
+  .DecimoPrimeraPantalla .content2 {
+    height: 300px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cee25110-5b2e-4d61-aeb9-72703fe8b9a5.jpg?v=1612230708");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .DecimoSegundaPantalla {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .DecimoSegundaPantalla .Body-Grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(3, 400px);
+    justify-content: center;
+    row-gap: 30px;
+    margin-top: 50px;
+  }
+
+  .DecimoTerceraPantalla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background: none;
+  }
+
+  .DecimoTerceraPantalla .content1 {
+    height: auto;
+    padding: 50px 20px;
+    order: 1;
+  }
+
+  .DecimoTerceraPantalla .content1 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
+  }
+
+  .DecimoTerceraPantalla .content1 p {
+    width: 100%;
+  }
+
+  .DecimoTerceraPantalla .content2 {
+    height: 40vw;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6.jpg?v=1612206207");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    order: 2;
+  }
+
+  .DecimoCuartaPantalla {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 400px;
+    width: 100%;
+    max-width: 350px;
+    max-height: 400px;
+  }
+
+  .DecimoCuartaPantalla p {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1000px) {
+  .PrimerPantalla {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_1.jpg?v=1612895294");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 50px 50px 50px 50px;
+    height: 900px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .PrimerPantalla div {
+    width: 100%;
+  }
+
+  .SegundaPantalla {
+    padding: 50px 20px;
+  }
+
+  .SegundaPantalla .GridItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 70px;
+  }
+
+  .TerceraPantalla {
+    padding: 50px 20px;
+    background-position: center;
+  }
+
+  .TerceraPantalla p {
+    width: 60%;
+  }
+
+  .BannerSellos {
+    height: 150px;
+    background-size: cover;
+  }
+
+  .CuartaPantalla {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background: none;
+    padding-top: 0px;
+  }
+
+  .CuartaPantalla .content1 {
+    height: 500px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2.jpg?v=1612205939");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    display: block;
+  }
+
+  .CuartaPantalla .content2 {
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .QuintaPantalla {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .QuintaPantalla .sleep-problems-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 0px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .QuintaPantalla .sleep-problems-body .sleep-problems-item {
+    width: 70%;
+  }
+
+  .SeptimaPantalla {
+    background-size: cover;
+    padding-left: 8vw;
+  }
+
+  .SeptimaPantalla div {
+    width: 70%;
+  }
+
+  .OctavaPantalla {
+    padding: 50px 20px;
+  }
+
+  .OctavaPantalla .Title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .OctavaPantalla .Body {
+    text-align: center;
+  }
+
+  .OctavaPantalla .Body .Benefits1 {
+    height: auto;
+    width: 100%;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits1 .content {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+
+  .OctavaPantalla .Body .Benefits1 .content p {
+    margin-top: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits1 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .OctavaPantalla .Body .Benefits2 .content {
+    width: 80%;
+
+    max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits2 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits3 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits3 .content {
+    width: 80%;
+
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits3 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .OctavaPantalla .Body .Benefits4 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits4 .content {
+    width: 80%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .OctavaPantalla .Body .Benefits4 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .OctavaPantalla .Body .Benefits5 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .OctavaPantalla .Body .Benefits5 .content {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .OctavaPantalla .Body .Benefits5 img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .DecimaPantalla {
+    height: 200px;
+  }
+
+  .DecimoSegundaPantalla .Body-Grid {
+    padding: 0 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  .DecimoTerceraPantalla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background: none;
+  }
+
+  .DecimoTerceraPantalla .content1 {
+    height: auto;
+    padding: 50px 20px;
+    order: 1;
+  }
+
+  .DecimoTerceraPantalla .content1 h1 {
+    color: var(--Primary-Color);
+    font-weight: 400;
+  }
+
+  .DecimoTerceraPantalla .content1 p {
+    width: 100%;
+  }
+
+  .DecimoTerceraPantalla .content2 {
+    height: 40vw;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6.jpg?v=1612206207");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    order: 2;
+  }
+
+  .DecimoCuartaPantalla {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 400px;
+    width: 100%;
+    max-width: 350px;
+    max-height: 400px;
+  }
+
+  .DecimoCuartaPantalla p {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
 }

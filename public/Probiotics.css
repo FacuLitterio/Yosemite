@@ -38,7 +38,7 @@ body {
 
 /* Segunda Pantalla */
 .SegundaPantalla {
-  padding: 50px 0px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@ body {
 .SegundaPantalla .GridItems {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, auto);
   column-gap: 40px;
   justify-items: center;
   justify-content: center;
@@ -394,6 +394,9 @@ body {
 }
 
 .NovenaPantalla .Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: var(--Primary-Color);
 }
@@ -410,7 +413,7 @@ body {
   border-left: 5px solid var(--Primary-Color);
   padding-left: 10px;
   color: var(--Muted-Color);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Decima Pantalla */
@@ -462,10 +465,10 @@ body {
 .DecimoSegundaPantalla .Body-Grid {
   height: 350px;
   display: grid;
-  grid-template-columns: repeat(4, 18vw);
+  grid-template-columns: repeat(4, 16vw);
   grid-template-rows: 1fr;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 30px;
   margin-top: 50px;
 }
 
@@ -478,6 +481,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 15px;
 }
 
 .DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(1) {
@@ -510,6 +514,7 @@ body {
 
 .DecimoSegundaPantalla .Body-Grid .GridItem p {
   text-align: center;
+  font-weight: var(--Font-Weight-Title);
   font-size: 1.3vw;
 }
 
@@ -617,8 +622,10 @@ body {
 }
 
 .DecimoCuartaPantalla img {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  min-height: 400px;
+  width: 400px;
+  min-width: 400px;
 }
 
 .DecimoCuartaPantalla p {
@@ -637,7 +644,7 @@ body {
     background-position: bottom;
     color: white;
     padding: 50px 20px;
-    height: 120vh;
+    height: 130vh;
     align-items: flex-start;
     text-align: center;
   }
@@ -653,17 +660,18 @@ body {
   .SegundaPantalla .GridItems {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 50px;
   }
 
   .TerceraPantalla {
     height: auto;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_1.jpg?v=1612227157");
     background-position: top;
-    padding: 50px 50px;
+    padding: 100px 75px;
   }
 
   .TerceraPantalla p {
-    width: 100%;
+    width: 90%;
   }
 
   .BannerSellos {
@@ -684,7 +692,7 @@ body {
   }
 
   .CuartaPantalla .content1 {
-    height: 300px;
+    height: 450px;
     width: 100%;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
     background-size: cover;
@@ -1009,6 +1017,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 70px;
+    padding: 0 50px;
   }
 
   .TerceraPantalla {
@@ -1026,39 +1035,12 @@ body {
   }
 
   .CuartaPantalla {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    background: none;
     height: auto;
   }
 
-  .CuartaPantalla .content1 {
-    height: 450px;
-    width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2-1200px.jpg?v=1612567220");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    order: 1;
-    display: block;
-  }
-
   .CuartaPantalla .content2 {
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    padding: 50px 20px 50px 20px;
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .CuartaPantalla .content2 h1 {
-    color: var(--Primary-Color);
-    font-weight: 400;
+    width: 50%;
+    padding: 50px 20px;
   }
 
   .QuintaPantalla {
@@ -1252,7 +1234,7 @@ body {
   .DecimoSegundaPantalla .Body-Grid {
     height: 350px;
     display: grid;
-    grid-template-columns: repeat(4, 18vw);
+    grid-template-columns: repeat(4, 250px);
     grid-template-rows: 1fr;
     justify-content: center;
     column-gap: 20px;
@@ -1272,7 +1254,7 @@ body {
 
   .DecimoSegundaPantalla .Body-Grid .GridItem p {
     text-align: center;
-    font-size: 2vw;
+    font-size: 20px;
   }
 
   .DecimoTerceraPantalla {
