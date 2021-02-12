@@ -28,8 +28,8 @@ body {
   z-index: 10;
 }
 
-/* Navbar */
-.Navbar {
+/* Navbar Mobile */
+.NavbarMobile {
   height: 70px;
   width: 100vw;
   background-color: white;
@@ -44,17 +44,17 @@ body {
   z-index: 10;
 }
 
-.Navbar div:nth-child(1) {
+.NavbarMobile div:nth-child(1) {
   padding: 0px 15px;
   cursor: pointer;
 }
 
-.Navbar div:nth-child(3) {
+.NavbarMobile div:nth-child(3) {
   margin-right: 35px;
   position: relative;
 }
 
-.Navbar div:nth-child(3) span {
+.NavbarMobile div:nth-child(3) span {
   height: 18px;
   width: 18px;
   position: absolute;
@@ -67,6 +67,76 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+}
+
+/* Navbar Desktop */
+.NavbarDesktop {
+  height: 70px;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--Primary-Color);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.NavbarDesktop .NavbarDesktop-Items {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.NavbarDesktop .NavbarDesktop-Items li {
+  cursor: pointer;
+}
+
+.NavbarDesktop div:nth-child(2) {
+  margin-right: 450px;
+}
+
+.NavbarDesktop div:nth-child(3) {
+  margin-right: 50px;
+  position: relative;
+}
+
+.NavbarDesktop div:nth-child(3) span {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background-color: var(--Primary-Color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.NavbarDesktop div:nth-child(3) img:nth-child(1) {
+  color: black;
+  fill: #333333;
+}
+
+/* Menu Products Desktop */
+.MenuProductsDesktop {
+  height: 400px;
+  width: 100vw;
+  background-color: #94cb66;
+  position: fixed;
+  top: 113px;
+  left: 0;
+  display: none;
 }
 
 /* Menu Slider */
@@ -307,4 +377,16 @@ body {
 
 .IconHamburguer.open .IconHamburguer-Bar:nth-child(3) {
   transform: rotateZ(-45deg);
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+  .NavbarDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .NavbarMobile {
+    display: none;
+  }
 }
