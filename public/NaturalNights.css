@@ -886,7 +886,7 @@ body {
 
   .DecimoSegundaPantalla {
     height: auto;
-    background: var(--Primary-Color);
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingredientes.jpg?v=1612248507");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1169,6 +1169,12 @@ body {
 
   .DecimaPantalla {
     height: 200px;
+  }
+
+  .DecimoSegundaPantalla {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingredientes.jpg?v=1612248507");
+    padding: 50px 0px;
+    position: relative;
   }
 
   .DecimoSegundaPantalla .Body-Grid {
