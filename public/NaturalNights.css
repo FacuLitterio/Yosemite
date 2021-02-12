@@ -226,6 +226,7 @@ body {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: white !important;
 }
 
 /* Septima Pantalla */
@@ -885,6 +886,7 @@ body {
 
   .DecimoSegundaPantalla {
     height: auto;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/naturalnights-ingredientes.jpg?v=1612248507");
     background-repeat: no-repeat;
     background-size: cover;
   }
