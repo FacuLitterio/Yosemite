@@ -624,8 +624,8 @@ body {
 .DecimoCuartaPantalla img {
   height: 100%;
   width: 100%;
-  max-height: 350px;
   max-width: 400px;
+  max-height: 400px;
 }
 
 .DecimoCuartaPantalla p {
@@ -667,7 +667,7 @@ body {
     height: auto;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_1.jpg?v=1612227157");
     background-position: top;
-    padding: 100px 75px;
+    padding: 100px 50px;
   }
 
   .TerceraPantalla p {
@@ -692,7 +692,7 @@ body {
   }
 
   .CuartaPantalla .content1 {
-    height: 450px;
+    height: 350px;
     width: 100%;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_a47a2738-8493-47e5-bdec-4a31dc26b578.jpg?v=1612390980");
     background-size: cover;
@@ -977,6 +977,13 @@ body {
     padding: 20px;
   }
 
+  .DecimoCuartaPantalla img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
   .DecimoCuartaPantalla p {
     font-size: 25px;
     padding-bottom: 0;
@@ -1248,5 +1255,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
   }
 }
