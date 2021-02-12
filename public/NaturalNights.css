@@ -642,7 +642,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 20px 50px 20px;
     height: 1000px;
     text-align: center;
     align-items: flex-start;
@@ -721,6 +721,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     column-gap: 0px;
+    row-gap: 20px;
     justify-content: center;
     margin-top: 50px;
     text-align: center;
