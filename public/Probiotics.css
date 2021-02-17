@@ -17,7 +17,7 @@ body {
 
 /* Primer Pantalla */
 .PrimerPantalla {
-  height: 700px;
+  height: 600px;
   width: 100%;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_6bddc82c-edd4-4a50-973d-afe4f9c12402.jpg?v=1612226028");
   background-repeat: no-repeat;
@@ -56,8 +56,8 @@ body {
   margin-top: 70px;
 }
 
-.SegundaPantalla .GridItems .CardBody h3 {
-  font-weight: 500;
+.SegundaPantalla .GridItems h4 {
+  font-weight: var(--Font-Weight-Title);
 }
 
 /* Tercera Pantalla */
@@ -116,7 +116,7 @@ body {
 
 .CuartaPantalla .content2 h1 {
   color: var(--Primary-Color);
-  font-weight: 400;
+  font-weight: var(--Font-Weight-Body);
 }
 
 /* Quinta Pantalla */
@@ -132,10 +132,6 @@ body {
   color: var(--Primary-Color);
 }
 
-.QuintaPantalla .digestive-problems-title h6 {
-  font-weight: 500;
-}
-
 .QuintaPantalla .digestive-problems-body {
   display: grid;
   grid-template-columns: repeat(2, 400px);
@@ -148,6 +144,10 @@ body {
 .QuintaPantalla .digestive-problems-body .digestive-problems-item img {
   height: 150px;
   width: 150px;
+}
+
+.QuintaPantalla .digestive-problems-body .digestive-problems-item h4 {
+  font-weight: var(--Font-Weight-Title);
 }
 
 .QuintaPantalla .digestive-problems-body .digestive-problems-item p {
@@ -202,10 +202,11 @@ body {
   max-width: 600px;
   text-align: left;
   border: none;
-  font-weight: bold;
+  font-weight: var(--Font-Weight-Title);
   outline: none;
   transition: all 0.4s;
   border-radius: 10px;
+  border: 1px solid white;
 }
 
 .active,
@@ -278,6 +279,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 30px;
+}
+
+.OctavaPantalla h4 {
+  font-weight: var(--Font-Weight-Title);
 }
 
 .OctavaPantalla .Body .Benefits1 .content {
@@ -413,7 +418,8 @@ body {
   border-left: 5px solid var(--Primary-Color);
   padding-left: 10px;
   color: var(--Muted-Color);
-  font-weight: 500;
+  font-weight: var(--Font-Weight-Body);
+  font-size: 18px;
 }
 
 /* Decima Pantalla */
@@ -533,7 +539,7 @@ body {
   border: none;
   border-radius: 10px;
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: var(--Font-Weight-Body);
   padding: 5px;
 }
 
@@ -553,7 +559,7 @@ body {
 }
 
 .Modal .Facts {
-  height: 95%;
+  height: 100%;
   width: 90%;
   max-width: 350px;
   max-height: 450px;
@@ -575,9 +581,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 50%;
   padding-bottom: 5px;
+  padding-right: 4px;
 }
 
 .Modal.open {
@@ -631,7 +638,7 @@ body {
 .DecimoCuartaPantalla p {
   color: var(--Primary-Color);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: var(--Font-Weight-Title);
   padding-bottom: 50px;
 }
 
@@ -716,7 +723,7 @@ body {
 
   .CuartaPantalla .content2 h1 {
     color: var(--Primary-Color);
-    font-weight: 400;
+    font-weight: var(--Font-Weight-Body);
   }
 
   .QuintaPantalla {
@@ -952,7 +959,7 @@ body {
 
   .DecimoTerceraPantalla .content1 h1 {
     color: var(--Primary-Color);
-    font-weight: 400;
+    font-weight: var(--Font-Weight-Body);
   }
 
   .DecimoTerceraPantalla .content1 p {
@@ -1017,8 +1024,8 @@ body {
   }
 
   .TerceraPantalla {
-    padding: 50px 20px;
     background-position: center;
+    padding: 50px 20px;
   }
 
   .TerceraPantalla p {
@@ -1242,7 +1249,7 @@ body {
 
   .DecimoTerceraPantalla .content1 h1 {
     color: var(--Primary-Color);
-    font-weight: 400;
+    font-weight: var(--Font-Weight-Body);
   }
 
   .DecimoTerceraPantalla .content1 p {

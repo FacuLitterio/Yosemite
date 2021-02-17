@@ -19,9 +19,14 @@ app.get("/Probiotics", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "Probiotics.html"));
 });
 
-//Probiotics Route
+//NaturalNights Route
 app.get("/NaturalNights", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "NaturalNights.html"));
+});
+
+//Shiny Days Route
+app.get("/ShinyDays", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "ShinyDays.html"));
 });
 
 app.listen(app.get("PORT"), () =>

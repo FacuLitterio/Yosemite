@@ -1,0 +1,163 @@
+:root {
+  --Primary-Color: #f6b742;
+  --Text-Color: #444444;
+  --Muted-Color: #7a7a7a;
+  --Text-Color-Light: #ffffff;
+  --Font-Weight-Title: 600;
+  --Font-Weight-Body: 400;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif !important;
+  color: var(--Text-Color);
+}
+
+/* Primer Pantalla */
+.PrimerPantalla {
+  height: 600px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_98584868-5786-47d6-85a2-884995fbe2ef.jpg?v=1613238017");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 0px 50px 200px;
+  display: flex;
+  align-items: center;
+  color: var(--Text-Color-Light);
+}
+
+.PrimerPantalla div {
+  width: 45%;
+}
+
+.PrimerPantalla div h1 {
+  font-weight: var(--Font-Weight-Title);
+}
+
+/* Segunda Pantalla */
+.SegundaPantalla {
+  padding: 50px;
+  text-align: center;
+}
+
+.SegundaPantalla h1 {
+  color: var(--Primary-Color);
+}
+
+.SegundaPantalla .GridItems {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.SegundaPantalla .GridItems h4 {
+  font-weight: var(--Font-Weight-Title);
+}
+
+/* Tercera Pantalla */
+.TerceraPantalla {
+  height: 450px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_0e6a5086-bed3-4264-b266-5d960b5a05bd.jpg?v=1612226166");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 75px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.TerceraPantalla p {
+  width: 40%;
+}
+
+/* Banner Sellos */
+.BannerSellos {
+  height: 250px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_66cf17da-f2a6-49c6-827a-64e5f88ba9de.jpg?v=1612226166");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cuarta Pantalla */
+.CuartaPantalla {
+  height: 500px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3_f5898da3-c6e3-4657-ae47-257637de61be.jpg?v=1613372558");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.CuartaPantalla .content1 {
+  height: 100%;
+  width: 50%;
+  padding: 0px 50px 0px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CuartaPantalla .content1 h1 {
+  color: var(--Primary-Color);
+  font-weight: var(--Font-Weight-Body);
+}
+
+/* Quinta Pantalla */
+
+.QuintaPantalla {
+  padding: 50px 20px 0px 20px;
+}
+
+.QuintaPantalla .sleep-problems-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.QuintaPantalla .sleep-problems-title h1 {
+  color: var(--Primary-Color);
+}
+
+.QuintaPantalla .sleep-problems-title h6 {
+  font-weight: var(--Font-Weight-Body);
+}
+
+.QuintaPantalla .sleep-problems-body {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.QuintaPantalla .sleep-problems-body .sleep-problems-item {
+  display: flex;
+  align-items: center;
+}
+
+.QuintaPantalla .sleep-problems-body .sleep-problems-item img {
+  height: 150px;
+  width: 150px;
+}
+
+.QuintaPantalla .sleep-problems-body .sleep-problems-item h4 {
+  padding: 0px 10px;
+  font-weight: var(--Font-Weight-Title);
+}
