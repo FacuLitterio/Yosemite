@@ -244,7 +244,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-left: 10vw;
+  padding-left: 14vw;
   display: flex;
   align-items: center;
 }
@@ -563,11 +563,11 @@ body {
 }
 
 .Modal .Facts {
-  height: 95%;
-  width: 90%;
-  max-width: 350px;
-  max-height: 450px;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Probiotics_-_Supplements_Facts-01.png?v=1612490807");
+  height: 100%;
+  width: 100%;
+  max-width: 370px;
+  max-height: 500px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Natural_Nights_-_Supplements_Facts-01.png?v=1613231871");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -650,7 +650,7 @@ body {
 
 @media (min-width: 0px) and (max-width: 700px) {
   .PrimerPantalla {
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_1.jpg?v=1612895294");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1-v2_ce25259a-4f07-4093-8770-2bfacab05fa1.jpg?v=1613610018");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -679,9 +679,13 @@ body {
 
   .TerceraPantalla {
     height: auto;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_1.jpg?v=1612227157");
-    background-position: top;
-    padding: 100px 50px;
+    min-height: 600px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_v3.jpg?v=1613663159");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
   }
 
   .TerceraPantalla p {

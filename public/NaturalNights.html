@@ -497,6 +497,13 @@
       <p>Are you ready to get back to your roots?</p>
     </section>
 
+    <!-- Modal -->
+    <div class="Modal" id="Modal">
+      <div class="Facts" id="Facts">
+        <i class="text-light" id="Times">&times</i>
+      </div>
+    </div>
+
     <script>
       let acc = document.getElementsByClassName("accordion");
 
@@ -512,6 +519,18 @@
           }
         });
       }
+
+      let button = document.getElementById("ButtonSupplementFacts");
+      let Modal = document.getElementById("Modal");
+      let Times = document.getElementById("Times");
+
+      button.addEventListener("click", () => {
+        Modal.classList.add("open");
+      });
+
+      Times.addEventListener("click", () => {
+        Modal.classList.remove("open");
+      });
     </script>
   </body>
 </html>

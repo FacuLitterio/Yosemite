@@ -161,3 +161,458 @@ body {
   padding: 0px 10px;
   font-weight: var(--Font-Weight-Title);
 }
+
+/* Sexta Pantalla */
+.SextaPantalla {
+  height: 500px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_cf5ba8d1-1a3f-417f-ab9a-dcc3fda6e001.jpg?v=1613372558");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  margin-top: 50px;
+}
+
+.SextaPantalla .content1 {
+  width: 50%;
+}
+
+.SextaPantalla .content2 {
+  height: 100%;
+  width: 50%;
+  padding: 0px 150px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SextaPantalla .content2 h1 {
+  color: var(--Primary-Color);
+  font-weight: var(--Font-Weight-Body);
+}
+
+/* Septima Pantalla */
+.SeptimaPantalla {
+  height: 500px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner5_21990d39-2cd5-48a1-83e6-6b113f8cfd8a.jpg?v=1613372558");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.SeptimaPantalla div {
+  width: 45%;
+  margin-top: 50px;
+}
+
+/* Octava Pantalla */
+.OctavaPantalla {
+  padding: 50px 0px;
+}
+
+.OctavaPantalla .Title {
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.OctavaPantalla .Title h1 {
+  color: var(--Primary-Color);
+}
+
+.OctavaPantalla h4 {
+  font-weight: var(--Font-Weight-Title);
+}
+
+.OctavaPantalla .Body {
+  margin-top: 30px;
+}
+
+.OctavaPantalla .Body .Benefits1 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.OctavaPantalla .Body .Benefits1 .content {
+  max-width: 30%;
+  margin-right: 50px;
+}
+
+.OctavaPantalla .Body .Benefits1 .content p {
+  color: var(--Muted-Color);
+  margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits1 img {
+  height: 500px;
+  width: 500px;
+}
+
+.OctavaPantalla .Body .Benefits2 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.OctavaPantalla .Body .Benefits2 .content {
+  margin-left: 50px;
+  max-width: 30%;
+}
+
+.OctavaPantalla .Body .Benefits2 .content p {
+  color: var(--Muted-Color);
+  margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits2 img {
+  height: 500px;
+  width: 500px;
+}
+
+.OctavaPantalla .Body .Benefits3 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.OctavaPantalla .Body .Benefits3 .content {
+  max-width: 30%;
+  margin-right: 50px;
+}
+
+.OctavaPantalla .Body .Benefits3 .content p {
+  color: var(--Muted-Color);
+  margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits3 img {
+  height: 500px;
+  width: 500px;
+}
+
+.OctavaPantalla .Body .Benefits4 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.OctavaPantalla .Body .Benefits4 .content {
+  margin-left: 50px;
+  max-width: 30%;
+}
+
+.OctavaPantalla .Body .Benefits4 .content p {
+  color: var(--Muted-Color);
+  margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits4 img {
+  height: 500px;
+  width: 500px;
+}
+
+.OctavaPantalla .Body .Benefits5 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.OctavaPantalla .Body .Benefits5 .content {
+  max-width: 30%;
+  margin-right: 50px;
+}
+
+.OctavaPantalla .Body .Benefits5 .content p {
+  color: var(--Muted-Color);
+  margin-top: 20px;
+}
+
+.OctavaPantalla .Body .Benefits5 img {
+  height: 500px;
+  width: 500px;
+}
+
+/* Novena Pantalla */
+.NovenaPantalla {
+  padding: 50px 0px;
+}
+
+.NovenaPantalla .Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--Primary-Color);
+}
+
+.NovenaPantalla .Title h1 {
+  max-width: 800px;
+}
+
+.NovenaPantalla .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.NovenaPantalla .content p {
+  border-left: 5px solid var(--Primary-Color);
+  padding-left: 10px;
+  color: var(--Muted-Color);
+  font-weight: var(--Font-Weight-Body);
+  font-size: 18px;
+}
+
+/* Decima Pantalla */
+.DecimaPantalla {
+  height: 300px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6_019d4bf8-088c-4344-9271-f38943e75945.jpg?v=1613372558");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Decimoprimera Pantalla */
+.DecimoPrimeraPantalla {
+  display: flex;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner6_e95cad94-a71a-4f3a-862e-7e2173951d5a.jpg?v=1612226559");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  align-items: center;
+}
+
+.DecimoPrimeraPantalla .content1 {
+  padding: 50px 20px 0px 100px;
+}
+
+.DecimoPrimeraPantalla .content1 p {
+  width: 80%;
+}
+
+.DecimoPrimeraPantalla .content2 {
+  height: 400px;
+  width: 100%;
+}
+
+/* DecimoSegunda Pantalla */
+.DecimoSegundaPantalla {
+  background-color: #ffce75;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.DecimoSegundaPantalla .Title {
+  text-align: center;
+  color: white;
+}
+
+.DecimoSegundaPantalla .Body-Grid {
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem {
+  width: 100%;
+  height: 100%;
+  color: var(--Primary-Color);
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(1) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/shinydays-ingrediente1.jpg?v=1613372555");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(2) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/shinydays-ingrediente2.jpg?v=1613372555");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(3) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/shinydays-ingrediente3.jpg?v=1613372554");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(4) {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/shinydays-ingrediente4.jpg?v=1613372554");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem p {
+  text-align: center;
+  font-weight: var(--Font-Weight-Title);
+  font-size: 20px;
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem p:nth-child(2) {
+  text-align: center;
+  font-size: 12px;
+  color: var(--Muted-Color);
+}
+
+.DecimoSegundaPantalla .ButtonSupplementFacts {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.DecimoSegundaPantalla .ButtonSupplementFacts button {
+  height: 40px;
+  width: 250px;
+  background-color: #ffb732;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: var(--Font-Weight-Body);
+  padding: 5px;
+}
+
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto auto;
+  padding: 10px;
+  background: #141414d5;
+}
+
+.Modal .Facts {
+  height: 100%;
+  width: 100%;
+  max-width: 330px;
+  max-height: 550px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Shiny_Days_-_Supplements_Facts-01.png?v=1613585581");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Modal .Facts i {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -13px;
+  background: rgb(255, 63, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  padding-right: 4px;
+}
+
+.Modal.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Decimo Tercera Pantalla */
+.DecimoTerceraPantalla {
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_dfd672d0-2b3c-45c1-b922-eea928f995d1.jpg?v=1613372556");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.DecimoTerceraPantalla .content1 {
+  height: 400px;
+  padding: 50px 250px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DecimoTerceraPantalla .content1 p {
+  width: 100%;
+}
+
+.DecimoTerceraPantalla .content2 {
+  width: 100%;
+}
+
+/* Decimo Cuarta Pantalla (Ultima) */
+.DecimoCuartaPantalla {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecimoCuartaPantalla img {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.DecimoCuartaPantalla p {
+  color: var(--Primary-Color);
+  font-size: 30px;
+  font-weight: var(--Font-Weight-Title);
+  padding-bottom: 50px;
+}
