@@ -20,13 +20,14 @@ body {
 .PrimerPantalla {
   height: 600px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_c9376a4e-0bbc-4e22-ad04-a12d5ec2c2e1.jpg?v=1613616539");
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/peptides_banner1_794821a9-a64c-4260-ad94-f57af422eeb3.jpg?v=1613678032");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0px 0px 50px 200px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 0 0 15vw;
   color: var(--Text-Color-Light);
 }
 
@@ -45,7 +46,9 @@ body {
 }
 
 .SegundaPantalla h1 {
+  width: 50%;
   color: var(--Primary-Color);
+  margin: 0 auto;
 }
 
 .SegundaPantalla .GridItems {
@@ -59,6 +62,20 @@ body {
 }
 
 .SegundaPantalla .GridItems h4 {
+  font-weight: var(--Font-Weight-Title);
+}
+
+.SegundaPantalla .GridItems2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  column-gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.SegundaPantalla .GridItems2 h4 {
   font-weight: var(--Font-Weight-Title);
 }
 
@@ -92,8 +109,8 @@ body {
 
 /* Cuarta Pantalla */
 .CuartaPantalla {
-  height: 600px;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_20868e0b-ff61-4463-9ec6-44f433c19ee0.jpg?v=1613616540");
+  height: 550px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_144f4831-84b4-4a38-ab2a-6dc23caea62b.jpg?v=1613678031");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,16 +183,16 @@ body {
 
 /* Septima Pantalla */
 .SeptimaPantalla {
-  height: 600px;
+  height: 700px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_5332cf85-59eb-4a27-ae20-6c237c495370.jpg?v=1613616540");
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_930f30f8-5aa3-4841-a38b-e9781139ec33.jpg?v=1613678031");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 150px;
+  padding: 50px 150px 50px 20px;
 }
 
 .SeptimaPantalla div {
@@ -377,11 +394,19 @@ body {
   margin-top: 30px;
 }
 
+.NovenaPantalla .content p {
+  border-left: 5px solid var(--Primary-Color);
+  padding-left: 10px;
+  color: var(--Muted-Color);
+  font-weight: var(--Font-Weight-Body);
+  font-size: 16px;
+}
+
 /* Decima Pantalla */
 .DecimaPantalla {
   height: 400px;
   width: 100%;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3_34e0d2c8-10fa-4ef0-bf0e-85297d164000.jpg?v=1613616540");
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/peptides_foto_fb94bc90-f6eb-45b2-87b0-10634a33c25c.jpg?v=1613678033");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -390,9 +415,9 @@ body {
 /* Decimoprimera Pantalla */
 .DecimoPrimeraPantalla {
   height: 500px;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner4_64f11943-ac74-4d70-9ea8-1670e40267de.jpg?v=1613616539");
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner3_a78df4a5-40b0-4be4-aed1-13a57b62db5b.jpg?v=1613678030");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
   text-align: left;
   display: flex;
@@ -411,7 +436,7 @@ body {
 
 /* DecimoSegunda Pantalla */
 .DecimoSegundaPantalla {
-  background: #010101;
+  background: #c2f2f1;
   padding: 50px 0px;
   position: relative;
 }
@@ -424,7 +449,7 @@ body {
 .DecimoSegundaPantalla .Body-Grid {
   height: 350px;
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(1, 250px);
   grid-template-rows: 1fr;
   justify-content: center;
   column-gap: 30px;
@@ -445,28 +470,7 @@ body {
 }
 
 .DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(1) {
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-ingrediente1.jpg?v=1613616535");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(2) {
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-ingrediente2.jpg?v=1613616535");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(3) {
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-ingrediente3.jpg?v=1613616535");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.DecimoSegundaPantalla .Body-Grid .GridItem:nth-child(4) {
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-ingrediente4.jpg?v=1613616535");
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/peptides_ing1.png?v=1613678029");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -482,6 +486,12 @@ body {
   text-align: center;
   font-size: 12px;
   color: var(--Muted-Color);
+}
+
+.DecimoSegundaPantalla .Body-Grid .GridItem p:nth-child(3) {
+  text-align: center;
+  font-size: 16px;
+  color: var(--Primary-Color);
 }
 
 .DecimoSegundaPantalla .ButtonSupplementFacts {
@@ -522,8 +532,8 @@ body {
   height: 100%;
   width: 100%;
   max-width: 400px;
-  max-height: 450px;
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Complex_-_Supplements_Facts-01.png?v=1613616706");
+  max-height: 500px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Peptides_-_Supplements_Facts-01.png?v=1613680811");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -555,7 +565,9 @@ body {
 
 /* Decimo Tercera Pantalla */
 .DecimoTerceraPantalla {
-  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_40b60c62-7b6f-48b3-8b58-c59d9e95c966.jpg?v=1613616537");
+  height: 700px;
+  padding: 50px 20px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_d0176710-dade-4779-913a-b96ba8ea65b0.jpg?v=1613678031");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -571,6 +583,19 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 200px;
+}
+
+.DecimoTerceraPantalla .content1 .GridSpecifications {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  text-align: center;
+}
+
+.DecimoTerceraPantalla .content1 .GridSpecifications h6 {
+  margin-top: 10px;
 }
 
 /* Decimo Cuarta Pantalla (Ultima) */
@@ -599,7 +624,7 @@ body {
 
 @media (min-width: 0px) and (max-width: 700px) {
   .PrimerPantalla {
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner1.jpg?v=1613616571");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_ebd1c192-75c2-4fbc-866b-55ad75c12ee8.jpg?v=1613678160");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -617,6 +642,10 @@ body {
     padding: 50px 20px;
   }
 
+  .SegundaPantalla h1 {
+    width: 100%;
+  }
+
   .SegundaPantalla .GridItems {
     width: 100%;
     display: grid;
@@ -624,6 +653,11 @@ body {
     grid-template-rows: repeat(3, auto);
     margin-top: 70px;
     padding: 0 50px;
+  }
+
+  .SegundaPantalla .GridItems2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
   }
 
   .TerceraPantalla {
@@ -662,7 +696,7 @@ body {
   .CuartaPantalla .content1 {
     height: 350px;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner-pain.jpg?v=1613616571");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_0fd55920-59bc-4724-ad71-929e000036bb.jpg?v=1613678160");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -697,8 +731,8 @@ body {
   }
 
   .SeptimaPantalla {
-    height: 1100px;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner2.jpg?v=1613616572");
+    height: 1200px;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_a26c1f90-fd36-4745-93b3-cc1a4b77c301.jpg?v=1613678161");
     background-size: cover;
     background-position: bottom;
     object-fit: cover;
@@ -864,7 +898,6 @@ body {
 
   .DecimoSegundaPantalla {
     height: auto;
-    background: #010101;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -873,7 +906,7 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: repeat(4, 400px);
+    grid-template-rows: repeat(1, 400px);
     justify-content: center;
     row-gap: 30px;
     margin-top: 50px;
@@ -886,6 +919,7 @@ body {
     grid-template-rows: auto auto;
     text-align: center;
     background: none;
+    padding: 0;
   }
 
   .DecimoTerceraPantalla .content1 {
@@ -906,7 +940,8 @@ body {
 
   .DecimoTerceraPantalla .content2 {
     height: 40vh;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner5.jpg?v=1613616570");
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_47a39cdf-51e5-4c5b-b624-5497fb63ae02.jpg?v=1613678160");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -938,7 +973,7 @@ body {
 
 @media (min-width: 700px) and (max-width: 1000px) {
   .PrimerPantalla {
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner1.jpg?v=1613616571");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_ebd1c192-75c2-4fbc-866b-55ad75c12ee8.jpg?v=1613678160");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -960,6 +995,13 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    margin-top: 70px;
+  }
+
+  .SegundaPantalla .GridItems2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     margin-top: 70px;
   }
 
@@ -989,7 +1031,7 @@ body {
   .CuartaPantalla .content1 {
     height: 500px;
     width: 100%;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_20868e0b-ff61-4463-9ec6-44f433c19ee0.jpg?v=1613616540");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-pain_0fd55920-59bc-4724-ad71-929e000036bb.jpg?v=1613678160");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -1029,7 +1071,7 @@ body {
     background-position: center;
     display: flex;
     justify-content: flex-end;
-    padding-right: 0;
+    padding: 50px 20px;
   }
 
   .SeptimaPantalla div {
@@ -1165,7 +1207,6 @@ body {
   }
 
   .DecimoSegundaPantalla {
-    background: #010101;
     padding: 50px 0px;
     position: relative;
   }
@@ -1173,9 +1214,8 @@ body {
   .DecimoSegundaPantalla .Body-Grid {
     height: auto;
     padding: 0 20px;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 400px 400px;
-    column-gap: 30px;
+    grid-template-columns: 250px;
+    grid-template-rows: 400px;
   }
 
   .DecimoTerceraPantalla {
@@ -1184,6 +1224,7 @@ body {
     grid-template-rows: auto auto;
     text-align: center;
     background: none;
+    padding: 0;
   }
 
   .DecimoTerceraPantalla .content1 {
@@ -1204,7 +1245,7 @@ body {
 
   .DecimoTerceraPantalla .content2 {
     height: 50vw;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/complex-banner5.jpg?v=1613616570");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_47a39cdf-51e5-4c5b-b624-5497fb63ae02.jpg?v=1613678160");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

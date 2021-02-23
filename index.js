@@ -29,14 +29,19 @@ app.get("/ShinyDays", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "ShinyDays.html"));
 });
 
-//Shiny Days Route
+//Eldelberry Route
 app.get("/Eldelberry", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "Eldelberry.html"));
 });
 
-//Shiny Days Route
-app.get("/Eldelberry", (req, res) => {
+//Collagen Complex Route
+app.get("/CollagenComplex", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "CollagenComplex.html"));
+});
+
+//Collagen Peptides Route
+app.get("/CollagenPeptides", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "CollagenPeptides.html"));
 });
 
 app.listen(app.get("PORT"), () =>
