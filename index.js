@@ -34,6 +34,11 @@ app.get("/Eldelberry", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "Eldelberry.html"));
 });
 
+//Shiny Days Route
+app.get("/Eldelberry", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "CollagenComplex.html"));
+});
+
 app.listen(app.get("PORT"), () =>
   console.log(`Server on Port ${app.get("PORT")}`)
 );
