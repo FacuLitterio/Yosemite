@@ -532,7 +532,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 300px;
-  max-height: 500px;
+  max-height: 370px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/Peptides_-_Supplements_Facts-01.png?v=1613680811");
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,7 +731,7 @@ body {
   }
 
   .SeptimaPantalla {
-    height: 1200px;
+    height: 1300px;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner2_a26c1f90-fd36-4745-93b3-cc1a4b77c301.jpg?v=1613678161");
     background-size: cover;
     background-position: bottom;
@@ -1219,6 +1219,7 @@ body {
   }
 
   .DecimoTerceraPantalla {
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -1244,7 +1245,7 @@ body {
   }
 
   .DecimoTerceraPantalla .content2 {
-    height: 50vw;
+    height: 400px;
     background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_47a39cdf-51e5-4c5b-b624-5497fb63ae02.jpg?v=1613678160");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1254,7 +1255,7 @@ body {
   }
 
   .DecimoCuartaPantalla {
-    height: auto;
+    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
