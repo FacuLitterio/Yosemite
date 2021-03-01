@@ -17,6 +17,18 @@ body {
   color: var(--Text-Color);
 }
 
+/* Titulos */
+.Titulo {
+  font-size: 2em !important;
+  font-weight: var(--Font-Weight-Body) !important;
+}
+
+.Subtitulo {
+  font-size: 1.5em !important;
+  font-weight: var(--Font-Weight-Title) !important;
+  margin-bottom: 0 !important;
+}
+
 /* Primer Pantalla */
 .PrimerPantalla {
   height: 650px;

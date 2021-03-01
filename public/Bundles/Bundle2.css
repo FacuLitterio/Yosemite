@@ -1,0 +1,283 @@
+:root {
+  --Primary-Color: #444444;
+  --Secondary-Color: #4e9bcd;
+  --Text-Color: #444444;
+  --Muted-Color: #7a7a7a;
+  --Text-Color-Light: #ffffff;
+  --Font-Weight-Title: 600;
+  --Font-Weight-Body: 400;
+  --Font-Weight-Title2: 500;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif !important;
+  color: var(--Text-Color);
+}
+
+/* Titulos */
+.Titulo {
+  font-size: 2em !important;
+  font-weight: var(--Font-Weight-Body) !important;
+}
+
+.Subtitulo {
+  font-size: 1.5em !important;
+  font-weight: var(--Font-Weight-Title) !important;
+  margin-bottom: 0 !important;
+}
+
+/* Primer Pantalla */
+.PrimerPantalla {
+  height: 700px;
+  width: 100%;
+  max-width: 100vw;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_6db6c24d-9752-473d-a75f-18dbc4a6b961.jpg?v=1614378009");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--Text-Color-Light);
+  text-align: center;
+}
+
+.PrimerPantalla div {
+  width: auto;
+}
+
+.PrimerPantalla div h1 {
+  font-weight: var(--Font-Weight-Title);
+}
+.PrimerPantalla div h2 {
+  font-weight: var(--Font-Weight-Title2);
+}
+
+/* Segunda Pantalla */
+.SegundaPantalla {
+  padding: 0px 50px 50px 50px;
+  text-align: center;
+}
+
+.SegundaPantalla div:nth-child(1) {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.SegundaPantalla h1 {
+  color: var(--Primary-Color);
+}
+
+.SegundaPantalla .GridItems {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.SegundaPantalla .GridItems h4 {
+  font-weight: var(--Font-Weight-Title);
+}
+
+/* Tercera Pantalla */
+.TerceraPantalla {
+  height: 300px;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_0e6a5086-bed3-4264-b266-5d960b5a05bd.jpg?v=1612226166");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 75px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.TerceraPantalla p {
+  width: 40%;
+}
+
+/* Banner Sellos */
+.BannerSellos {
+  height: 250px;
+  width: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_66cf17da-f2a6-49c6-827a-64e5f88ba9de.jpg?v=1612226166");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Decimo Cuarta Pantalla (Ultima) */
+.DecimoCuartaPantalla {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecimoCuartaPantalla img {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.DecimoCuartaPantalla p {
+  color: var(--Primary-Color);
+  font-size: 30px;
+  font-weight: var(--Font-Weight-Title);
+  padding-bottom: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .PrimerPantalla {
+    height: 700px;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_6db6c24d-9752-473d-a75f-18dbc4a6b961.jpg?v=1614378009");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .PrimerPantalla div {
+    width: 100%;
+  }
+
+  .SegundaPantalla {
+    padding: 50px 20px;
+  }
+
+  .SegundaPantalla .GridItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin-top: 70px;
+  }
+
+  .TerceraPantalla {
+    height: auto;
+    min-height: 600px;
+    width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_v3.jpg?v=1613663159");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .TerceraPantalla p {
+    width: 90%;
+  }
+
+  .BannerSellos {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-sellos_627e07fd-1541-4038-96e9-c5045008166b.jpg?v=1612227157");
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .DecimoCuartaPantalla {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .DecimoCuartaPantalla p {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .PrimerPantalla {
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_6db6c24d-9752-473d-a75f-18dbc4a6b961.jpg?v=1614378009");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .PrimerPantalla div {
+    width: 100%;
+  }
+
+  .SegundaPantalla {
+    padding: 50px 20px;
+  }
+
+  .SegundaPantalla .h1 {
+    max-width: 300px !important;
+  }
+
+  .SegundaPantalla .GridItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 70px;
+  }
+
+  .TerceraPantalla {
+    padding: 50px 20px;
+    background-position: center;
+  }
+
+  .TerceraPantalla p {
+    width: 60%;
+  }
+
+  .BannerSellos {
+    height: 150px;
+    background-size: cover;
+  }
+
+  .DecimoCuartaPantalla {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .DecimoCuartaPantalla img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .DecimoCuartaPantalla p {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+}
