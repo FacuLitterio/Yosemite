@@ -23,7 +23,8 @@ body {
 .Subtitulo {
   font-size: 1.5em !important;
   font-weight: var(--Font-Weight-Title) !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
+  margin-top: 20px;
 }
 
 /* Primer Pantalla */
