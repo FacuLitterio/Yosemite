@@ -39,7 +39,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0px 0px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -84,12 +84,13 @@ body {
 }
 
 .SegundaPantalla .GridItems h4 {
+  min-height: 40px;
   font-weight: var(--Font-Weight-Title);
 }
 
 /* Tercera Pantalla */
 .TerceraPantalla {
-  height: 300px;
+  height: 450px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_0e6a5086-bed3-4264-b266-5d960b5a05bd.jpg?v=1612226166");
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,7 +100,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
 
 .TerceraPantalla p {
@@ -164,7 +164,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    margin-top: 70px;
+    row-gap: 50px;
+    margin-top: 50px;
+    padding: 0 50px;
   }
 
   .TerceraPantalla {
@@ -175,6 +177,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 100px 20px;
   }
 
   .TerceraPantalla p {
@@ -239,6 +242,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+    gap: 50px;
     margin-top: 70px;
   }
 

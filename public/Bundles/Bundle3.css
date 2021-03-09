@@ -39,7 +39,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0px 0px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -92,7 +92,7 @@ body {
 
 /* Tercera Pantalla */
 .TerceraPantalla {
-  height: 300px;
+  height: 450px;
   background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner_yosemite_0e6a5086-bed3-4264-b266-5d960b5a05bd.jpg?v=1612226166");
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,7 +102,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
 
 .TerceraPantalla p {
@@ -146,7 +145,7 @@ body {
 @media (min-width: 0px) and (max-width: 700px) {
   .PrimerPantalla {
     height: 700px;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_6db6c24d-9752-473d-a75f-18dbc4a6b961.jpg?v=1614378009");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_83d89b15-25ac-46c2-a6b0-82381a59abbf.jpg?v=1614379222");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,9 +166,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    margin-top: 70px;
+    row-gap: 50px;
+    margin-top: 50px;
+    padding: 0 50px;
   }
 
+  .SegundaPantalla .GridItems h4 {
+    min-height: 40px;
+    font-weight: var(--Font-Weight-Title);
+  }
+
+  /* Tercera Pantalla */
   .TerceraPantalla {
     height: auto;
     min-height: 600px;
@@ -178,6 +185,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 100px 20px;
   }
 
   .TerceraPantalla p {
@@ -217,7 +225,7 @@ body {
 
 @media (min-width: 700px) and (max-width: 1000px) {
   .PrimerPantalla {
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_6db6c24d-9752-473d-a75f-18dbc4a6b961.jpg?v=1614378009");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_83d89b15-25ac-46c2-a6b0-82381a59abbf.jpg?v=1614379222");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -242,6 +250,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+    gap: 50px;
     margin-top: 70px;
   }
 
