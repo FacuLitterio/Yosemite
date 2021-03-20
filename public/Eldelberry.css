@@ -996,7 +996,7 @@ body {
   .CuartaPantalla .content1 {
     height: 400px;
     width: 100%;
-    background: url("");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/elderberry-pain.jpg?v=1613375390");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -1006,7 +1006,7 @@ body {
 
   .CuartaPantalla .content2 {
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 50px;
     text-align: center;
     order: 1;
   }
@@ -1040,7 +1040,7 @@ body {
   }
 
   .SeptimaPantalla div {
-    width: 60%;
+    width: 55%;
   }
 
   .OctavaPantalla {

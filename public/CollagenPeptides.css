@@ -1054,7 +1054,7 @@ body {
 
   .CuartaPantalla .content2 {
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 50px;
     text-align: center;
     order: 1;
   }
@@ -1068,6 +1068,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     column-gap: 0px;
+    row-gap: 50px;
     justify-content: center;
     justify-items: center;
     margin-top: 50px;

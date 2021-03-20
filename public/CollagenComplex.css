@@ -1013,7 +1013,7 @@ body {
 
   .CuartaPantalla .content2 {
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 50px;
     text-align: center;
     order: 1;
   }
@@ -1165,6 +1165,10 @@ body {
     height: auto;
     width: 100%;
     max-width: 500px;
+  }
+
+  .NovenaPantalla {
+    padding: 50px;
   }
 
   .DecimaPantalla {

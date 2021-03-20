@@ -1017,7 +1017,7 @@ body {
 
 @media (min-width: 700px) and (max-width: 1000px) {
   .PrimerPantalla {
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1_1.jpg?v=1612895294");
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner1-v2_ce25259a-4f07-4093-8770-2bfacab05fa1.jpg?v=1613610018");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -1080,7 +1080,7 @@ body {
     width: 100%;
     text-align: center;
     order: 1;
-    padding: 50px;
+    padding: 30px 50px;
   }
 
   .QuintaPantalla {
@@ -1092,6 +1092,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     column-gap: 0px;
+    row-gap: 50px;
     justify-content: center;
     justify-items: center;
     margin-top: 50px;

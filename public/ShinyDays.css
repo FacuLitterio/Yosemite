@@ -1108,13 +1108,15 @@ body {
   }
 
   .SeptimaPantalla {
-    height: auto;
+    height: 300px;
     background-size: cover;
-    padding-left: 8vw;
+    background-position: center;
+    padding: 50px 0px 50px 8vw;
   }
 
   .SeptimaPantalla div {
     width: 60%;
+    margin-top: 0;
   }
 
   .OctavaPantalla {
@@ -1254,24 +1256,37 @@ body {
   }
 
   .DecimoTerceraPantalla {
-    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     text-align: center;
-    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-ipad9-ShinyDays.jpg?v=1615210612");
-    background-size: cover;
-    background-position: center;
-    align-items: center;
+    background: none;
   }
 
   .DecimoTerceraPantalla .content1 {
+    height: auto;
+    max-width: 800px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .DecimoTerceraPantalla .content1 h1 {
+    color: var(--Primary-Color);
+    font-weight: var(--Font-Weight-Body);
+  }
+
+  .DecimoTerceraPantalla .content1 p {
     width: 100%;
-    padding: 0;
   }
 
   .DecimoTerceraPantalla .content2 {
-    width: 100%;
+    height: 50vw;
+    background: url("https://cdn.shopify.com/s/files/1/0462/5353/9490/files/banner-suggested-use_7d131b02-7ab9-44f8-b904-d9773edb378f.jpg?v=1613372620");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    order: 2;
   }
 
   .DecimoCuartaPantalla {
